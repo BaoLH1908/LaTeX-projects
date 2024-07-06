@@ -1,0 +1,293 @@
+\documentclass[10.5pt, a4paper]{article}
+\usepackage[paperheight=32cm,paperwidth=21cm,includehead,nomarginpar,textwidth=18cm,textheight=27.5cm,headheight=4mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{xcolor,amsmath,amssymb,amsfonts}
+\usepackage[most]{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\title{\color{red}\textbf{Tuyển tập đề thi Phương trình toán lý}}
+\author{\color{red}Lê Hoàng Bảo}
+\date{\color{red}18 tháng 01 năm 2024}
+\addto\captionsenglish{\renewcommand*\contentsname{Mục lục}}
+\begin{document}
+	% Set the page style to "fancy"...
+	\pagestyle{fancy}
+	%... then configure it.
+	\fancyhead{} % clear all header fields
+	\fancyhead[R]{\textbf{Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM\\Bộ môn Giải tích, Khoa Toán - Tin học}}
+	\fancyhead[L]{\color{red}\textbf{\LaTeX~by Lê Hoàng Bảo}}
+	\fancyfoot{} % clear all footer fields
+	\fancyfoot[C]{\textbf\thepage}
+	\fancyfoot[L]{\small PHƯƠNG TRÌNH TOÁN LÝ}
+	\fancyfoot[R]{Mã môn: MTH10413}
+	\renewcommand{\headrulewidth}{0.6pt}
+	\renewcommand{\footrulewidth}{0.6pt}
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+\section{Đề thi cuối học kì I Phương trình toán lý, 2010 - 2011}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút)
+\end{center}
+Chọn và giải 3 trong 4 bài sau:\\\\
+\color{red}\underline{\textbf{Bài 1:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}-u_{xx}=0, & -\infty<x<\infty,~t>0\\
+u(x,0)=\sin^2x,~u_t(x,0)=xe^{-x}, & -\infty<x<\infty
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}-u_{xx}=0, & 0<x<1,~t>0\\
+u(0,t)=t,~u_x(1,t)=t^2, & t\ge0\\
+u(x,0)=u_t(x,0)=0, & 0\le x\le1
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_t-u_{xx}=1+\frac1\pi x(2t-1), & 0<x<\pi,~t>0\\
+u(0,t)=t,~u(\pi,t)=t^2, & t\ge0\\
+u(x,0)=x(\pi-x), & 0\le x\le\pi
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{xx}+u_{yy}=0, & 0<x<1,~0<y<1\\
+u(x,0)=\sin^3(\pi x),~u(x,1)=0, & 0\le x\le1\\
+u(0,y)=u(1,y)=0, & 0\le y\le1
+\end{array}
+\end{cases}$
+
+\newpage
+
+\section{Đề thi cuối học kì I Phương trình toán lý, 2011 - 2012}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}-u_{xx}=0, & 0<x<1,~t>0\\
+u(0,t)=t^2,~u(1,t)=t, & t\ge0\\
+u(x,0)=\sin(\pi x),~u_t(x,0)=0, & 0\le x\le1
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_t-u_{xx}=0, & 0<x<\pi,~t>0\\
+u(0,t)=t,~u(\pi,t)=t^2, & t\ge0\\
+u(x,0)=x(\pi-x), & 0\le x\le\pi
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{xx}+u_{yy}=0, & 0<x<\pi,~0<y<\pi\\
+u(x,0)=\sin^3x,~u(x,\pi)=0, & 0\le x\le\pi\\
+u(0,y)=u(\pi,y)=0, & 0\le y\le\pi
+\end{array}
+\end{cases}$
+\newpage
+
+\section{Đề thi cuối học kì I Phương trình toán lý, 2012 - 2013}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút)
+\end{center}
+\textbf{\color{orange}Note: Điểm của đề thi này nhận bốn giá trị là 0, 5, 9 và 10, tương ứng với việc làm đúng 0, 1, 2 và 3 câu.}\\\\
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Giải bài toán theo hai trường hợp $\alpha\in\mathbb Z$ và $\alpha\notin\mathbb Z$: $\begin{cases}
+\begin{array}{ll}
+u_t-u_{xx}=0, & 0<x<\pi,~t>0\\
+u(0,t)=u(\pi,t)=0, & t\ge0\\
+u(x,0)=\sin(\alpha x), & 0\le x\le\pi
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}-u_{xx}=6xt, & 0<x<1,~t>0\\
+u(0,t)=0,~u(1,t)=t^3, & t\ge0\\
+u(x,0)=\sin(\pi x),~u_t(x,0)=0, & 0\le x\le1
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{xx}+u_{yy}=0, & 0<x<\pi,~0<y<1\\
+u(0,y)=u(\pi,y)=0, & 0\le y\le1\\
+u(x,0)=\sin x+\sin(2x),~u(x,1)=0, & 0\le x\le\pi
+\end{array}
+\end{cases}$
+
+\newpage
+
+\section{Đề thi cuối học kì I Phương trình toán lý, 2018 - 2019}
+\begin{center}
+	\color{blue}(Ngày thi: 05/01/2019; Thời gian: 90 phút)
+\end{center}
+\textbf{Chọn một trong hai bài A hoặc B để giải.}\\\\
+\color{red}\underline{\textbf{Bài A:}} \color{black}Giải các bài toán sau:\\\\
+\color{red}\underline{\textbf{Bài 1A (3 điểm):}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}-u_{xx}=0, & 0<x<1,~t>0\\
+u(0,t)=t,~u(1,t)=2t, & t\ge0\\
+u(x,0)=\sin(3\pi x),~u_t(x,0)=x+1, & 0\le x\le1
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 2A (3 điểm):}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_t-u_{xx}=t^2e^{-t}\sin x, & 0<x<\pi,~t>0\\
+u(0,t)=u(\pi,t)=0, & t\ge0\\
+u(x,0)=\sin(3x), & 0\le x\le\pi
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 3A (4 điểm):}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{xx}+u_{yy}=\sin(2x)\sin(3\pi y), & 0<x<\pi,~0<y<1\\
+u(0,y)=u(\pi,y)=0, & 0\le y\le1\\
+u(x,0)=\sin x,~u(x,1)=0, & 0\le x\le\pi
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài B:}} \color{black}Giải các bài toán sau:\\\\
+\color{red}\underline{\textbf{Bài 1B (3 điểm):}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}-u_{xx}=0, & 0<x<1,~t>0\\
+u_x(0,t)=u(1,t)=0, & t\ge0\\
+u(x,0)=\cos\frac{3\pi x}{2},~u_t(x,0)=\cos\frac{9\pi x}{2}, & 0\le x\le1
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 2B (3 điểm):}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_t=u_{xx}+e^{-t}\sin(3\pi x), & 0<x<1,~t>0\\
+u(0,t)=u(1,t)=0, & t\ge0\\
+u(x,0)=\frac14\sin(\pi x)+\sin^3(\pi x), & 0\le x\le1
+\end{array}
+\end{cases}$\\\\\\
+\color{red}\underline{\textbf{Bài 3B (4 điểm):}} \color{black}$\begin{cases}
+\begin{array}{ll}
+u_{tt}=4u_{xx}+t\sin x, & 0<x<\pi,~t>0\\
+u(0,t)=u(\pi,t)=0, & t\ge0\\
+u(x,0)=\sin(2x),~u_t(x,0)=\sin x, & 0\le x\le\pi
+\end{array}
+\end{cases}$
+
+\newpage
+
+\section{Đề thi giữa học kì I Phương trình toán lý, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 03/11/2022; Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (2 điểm):}} \color{black}Chuyển động tắt dần của vật nặng được gắn vào một lò xo có phương trình là: $$2\dfrac{\text{d}^2x}{\text{d}t^2}+14\dfrac{\text{d}x}{\text{d}t}+12x=0,$$
+với $x(t)$ là khoảng cách của vật so với vị trí lò xo cân bằng tại thời điểm $t$. Nếu $x(0)=1$ và $x'(0)=0$, tìm phương trình của $x(t)$.\\\\
+\color{red}\underline{\textbf{Bài 2 (8 điểm):}} \color{black}Xét phương trình dao động tự do của một sợi dây thuần nhất với điều kiện biên Neumann như sau: $$\begin{cases}
+\begin{array}{ll}
+	\dfrac{\partial^2u}{\partial t^2}=4\dfrac{\partial^2u}{\partial x^2}, & 0<x<\pi,~t>0\\\\
+	\dfrac{\partial u}{\partial x}(0,t)=\dfrac{\partial u}{\partial x}(\pi,t)=0, & t\ge0\\\\
+	u(x,0)=\cos(3x),~\dfrac{\partial u}{\partial t}(x,0)=1, & 0\le x\le\pi
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Tìm nghiệm $u(x,t)$ của phương trình trên.\\\\
+\color{red}b) \color{black}Giả sử một ngoại lực tác động vào sợi dây như trên làm cho chuyển động của dây thay đổi theo phương trình: $$\dfrac{\partial^2u}{\partial t^2}=4\dfrac{\partial^2u}{\partial x^2}+4\cos^3x,~~t>0,~0<x<\pi$$
+Giải bài toán dao động cưỡng bức của dây: $$\begin{cases}
+\begin{array}{ll}
+	\dfrac{\partial^2u}{\partial t^2}=4\dfrac{\partial^2u}{\partial x^2}+4\cos^3x, & 0<x<\pi,~t>0\\\\
+	\dfrac{\partial u}{\partial x}(0,t)=\dfrac{\partial u}{\partial x}(\pi,t)=0, & t\ge0\\\\
+	u(x,0)=\dfrac{\partial u}{\partial t}(x,0)=0, & 0\le x\le\pi
+	\end{array}
+\end{cases}$$
+\color{red}c) \color{black}Dựa vào kết quả câu a và b, tìm nghiệm của bài toán sau: $$\begin{cases}
+\begin{array}{ll}
+	\dfrac{\partial^2u}{\partial t^2}=4\dfrac{\partial^2u}{\partial x^2}+4\cos^3x, & 0<x<\pi,~t>0\\\\
+	\dfrac{\partial u}{\partial x}(0,t)=\dfrac{\partial u}{\partial x}(\pi,t)=0, & t\ge0\\\\
+	u(x,0)=\cos(3x),~\dfrac{\partial u}{\partial t}(x,0)=1, & 0\le x\le\pi
+	\end{array}
+\end{cases}$$
+\newpage
+
+\section{Đề thi cuối học kì I Phương trình toán lý, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 04/01/2023; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (6 điểm):}} \color{black}Xét bài toán của sự khuếch tán nhiệt trong một thanh đồng chất.\\\\
+\color{red}a) \color{black}Giả sử không có sự xuất hiện của nguồn nhiệt bên ngoài. Sự phân bố nhiệt độ $u(x,t)$ trong thanh thỏa phương trình: $$\begin{cases}
+\begin{array}{ll}
+\dfrac{\partial u}{\partial t}=4\dfrac{\partial^2u}{\partial x^2}, & t>0,~0<x<\pi\\\\
+u(0,t)=0,~\dfrac{\partial u}{\partial x}(\pi,t)=0, & t\ge0
+\end{array}
+\end{cases}$$
+Biết rằng nhiệt độ ban đầu của thanh là $u(x,0)=8\sin^3\dfrac x2$. Tìm công thức nghiệm $u(x,t)$.\\\\
+\color{red}b) \color{black} Dựa vào kết quả ở câu a để giải bài toán với điều kiện biên không thuần nhất sau: $$\begin{cases}
+\begin{array}{ll}
+\dfrac{\partial u}{\partial t}=4\dfrac{\partial^2u}{\partial x^2}+2t+25\sin\dfrac{5x}{2}, & t>0,~0<x<\pi\\\\
+u(0,t)=t^2,~\dfrac{\partial u}{\partial x}(\pi,t)=3, & t\ge0\\\\
+u(x,0)=3x+8\sin^3\dfrac x2, & 0\le x\le\pi
+\end{array}
+\end{cases}$$
+\color{red}\underline{\textbf{Bài 2 (3 điểm):}} \color{black}Quá trình dẫn nhiệt dừng trên một vật hình vành khăn tuân theo phương trình Laplace: $$\Delta u(r,\varphi)=\dfrac1r\dfrac{\partial}{\partial r}\left(r\dfrac{\partial u}{\partial r}\right)+\dfrac{1}{r^2}\dfrac{\partial^2u}{\partial\varphi^2}=0,~~1<r<2,~0\le\varphi\le2\pi$$
+Giải phương trình trên với phân bố nhiệt tại mép hình vành khăn là: $$u(1,\varphi)=2+3\cos\varphi,~~u(2,\varphi)=2+15\sin2\varphi$$
+\color{red}\underline{\textbf{Bài 3 (1 điểm):}} \color{black}Xét phương trình Poisson của $u(x,y,z)$ với điều kiện biên Neumann: $$\begin{cases}
+\begin{array}{ll}
+\Delta u=f(x,y,z), & (x,y,z)\in\Omega\\\\
+\dfrac{\partial u}{\partial\nu}(x,y,z)=0, & (x,y,z)\in\partial\Omega
+\end{array}
+\end{cases}~~~~~~~~~~(1)$$
+trong đó tập $\Omega\subset\mathbb R^3$ bị chặn và $\nu$ là vector pháp tuyến ngoài trên biên của $\Omega$.\\\\
+\color{red}a) \color{black}Bài toán (1) có phải là bài toán đặt chỉnh theo nghĩa Hadamard hay không? Tại sao?\\\\
+\color{red}b) \color{black}Chứng minh rằng đẳng thức: $$\displaystyle\iiint_\Omega f(x,y,z)\text{d}x\text{d}y\text{d}z=0$$ là điều kiện cần cho bài toán (1) có nghiệm $u\in C^2(\overline\Omega)$
+
+\newpage
+
+\section{Đề thi giữa học kì I Phương trình toán lý, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 17/11/2023; Thời gian: 60 phút)
+\end{center}
+Xét dao động của một sợi dây mỏng, thuần nhất, có chiều dài hữu hạn trong các trường hợp dưới đây.\\\\
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Dao động của dây thỏa phương trình thuần nhất với điều kiện biên hỗn hợp: $$\begin{cases}
+\begin{array}{ll}
+\dfrac{\partial^2u}{\partial t^2}-\dfrac19\dfrac{\partial^2u}{\partial x^2}=0, & 0<x<2,~t>0\\\\
+\dfrac{\partial u}{\partial x}(0,t)=u(2,t)=0, & t\ge0\\\\
+u(x,0)=4\cos^3\dfrac{\pi x}{4},~\dfrac{\partial u}{\partial t}(x,0)=0, & 0\le x\le2
+\end{array}
+\end{cases}$$
+Tìm nghiệm $u(x,t)$ của phương trình trong trường hợp này.\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Giả sử dây chịu tác động của một ngoại lực $f(x,t)=\pi\cos\dfrac{\pi t}{4}\cos\dfrac{3\pi x}{4}$ nên dao động của dây\\ thay đổi theo phương trình: $$\begin{cases}
+\begin{array}{ll}
+\dfrac{\partial^2u}{\partial t^2}-\dfrac19\dfrac{\partial^2u}{\partial x^2}=f(x,t), & 0<x<2,~t>0\\\\
+\dfrac{\partial u}{\partial x}(0,t)=u(2,t)=0, & t\ge0\\\\
+u(x,0)=\dfrac{\partial u}{\partial t}(x,0)=0, & 0\le x\le2
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Tìm nghiệm $u(x,t)$ của phương trình.\\\\
+\color{red}b) \color{black}Cho biết ngoại lực $f(x,t)$ có đặc điểm gì và hiện tượng gì xảy ra với dao động của dây? Giải thích.\\\\
+\color{red}c) \color{black}Sóng đứng có xuất hiện không? Nếu có, cho biết tần số dao động và bước sóng của dây.\\\\
+\color{red}\underline{\textbf{Bài 3 (1 điểm):}} \color{black}Sử dụng kết quả của câu trước, tìm nghiệm $u(x,t)$ của phương trình sau: $$\begin{cases}
+\begin{array}{ll}
+\dfrac{\partial^2u}{\partial t^2}-\dfrac19\dfrac{\partial^2u}{\partial x^2}=-2x\sin t, & 0<x<2,~t>0\\\\
+\dfrac{\partial u}{\partial x}(0,t)=2\sin t,~u(2,t)=4\sin t, & t\ge0\\\\
+u(x,0)=4\cos^3\dfrac{\pi x}{4},~\dfrac{\partial u}{\partial t}(x,0)=2x, & 0\le x\le2
+\end{array}
+\end{cases}$$
+
+\newpage
+
+\section{Đề thi cuối học kì I Phương trình toán lý, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 18/01/2024; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Nhiệt độ $u(x,t)$ trên một thanh kim loại đồng chất ở vị trí $x$ tại thời điểm $t$ được miêu tả bởi phương trình nhiệt: $$\begin{cases}
+\begin{array}{ll}
+	\dfrac{\partial u}{\partial t}-\dfrac19\dfrac{\partial^2u}{\partial x^2}=F(x,t), & 0<x<2,~t>0\\\\
+	\dfrac{\partial u}{\partial x}(0,t)=g_1(t),~\dfrac{\partial u}{\partial x}(2,t)=g_2(t), & t\ge0\\\\
+	u(x,0)=h(x), & 0\le x\le2
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Khi hai đầu thanh kim loại được cách nhiệt và không có nguồn nhiệt bên ngoài, tìm nghiệm $u(x,t)$, biết rằng nhiệt độ ban đầu trên thanh kim loại được cho bởi $h(x)=\sin^2\dfrac{3\pi x}{2}$.\\\\
+\color{red}b) \color{black}Khi có sự trao đổi nhiệt với môi trường $g_1(t)=e^{-t}$ và $g_2(t)=5e^{-t}$, cùng với sự xuất hiện của nguồn nhiệt $$F(x,t)=8\pi^2\cos^2(\pi x)-e^{-t}\left(x^2+x+\dfrac29\right),$$ tìm nghiệm $u(x,t)$, biết rằng nhiệt độ ban đầu trên thanh kim loại được cho bởi $h(x)=x^2+x$.\\\\
+\color{red}\underline{\textbf{Bài 2 (3 điểm):}} \color{black}Quá trình dẫn nhiệt dừng trên một vật hình vành khăn tuân theo phương trình Laplace: $$\Delta u(r,\varphi)=\dfrac1r\dfrac{\partial}{\partial r}\left(r\dfrac{\partial u}{\partial r}\right)+\dfrac{1}{r^2}\dfrac{\partial^2u}{\partial\varphi^2}=0,~~1<r<2,~0\le\varphi\le2\pi$$
+Giải phương trình trên với phân bố nhiệt tại mép hình vành khăn là: $$u(1,\varphi)=2023-6\cos\varphi,~~u(2,\varphi)=506\ln16+2023+15\sin(2\varphi)$$
+\color{red}\underline{\textbf{Bài 3 (3 điểm):}} \color{black}Bằng phương pháp biến đổi Fourier, với giả sử rằng $|u|$ và $|g|$ khả tích, chứng tỏ nghiệm $u(x,t)$ của phương trình sóng trên dây dài vô hạn: $$\begin{cases}
+\begin{array}{ll}
+	\dfrac{\partial^2u}{\partial t^2}-\dfrac14\dfrac{\partial^2u}{\partial x^2}=0, & -\infty<x<\infty,~t>0\\\\
+	u(x,0)=0,~\dfrac{\partial u}{\partial t}(x,0)=g(x), & -\infty<x<\infty
+\end{array}
+\end{cases}$$
+được cho bởi công thức $u(x,t)=\displaystyle\int_{x-\frac t2}^{x+\frac t2}g(w)\text{d}w$.
+\end{document}
