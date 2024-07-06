@@ -1,0 +1,665 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[paperheight=30cm,paperwidth=20cm,includehead,nomarginpar,textwidth=17.5cm,textheight=25cm,headheight=4mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{xcolor,amsmath,amssymb,amsfonts}
+\usepackage[most]{tcolorbox}
+\usepackage{wrapfig, eso-pic}
+\usepackage{graphicx}
+\title{\color{red}\textbf{Tuyển tập đề thi Giải tích hàm}}
+\author{\color{red}Lê Hoàng Bảo}
+\date{\color{red}Bản cập nhật ngày 24 tháng 06 năm 2024}
+\addto\captionsenglish{\renewcommand*\contentsname{Mục lục}}
+\begin{document}
+	% Set the page style to "fancy"...
+	\pagestyle{fancy}
+	%... then configure it.
+	\fancyhead{} % clear all header fields
+	\fancyhead[R]{\textbf{Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM\\Bộ môn Giải tích, Khoa Toán - Tin học}}
+	\fancyhead[L]{\textbf{\color{red}\LaTeX~by Lê Hoàng Bảo}}
+	\fancyfoot{} % clear all footer fields
+	\fancyfoot[C]{\textbf{\color{blue}\thepage}}
+	\fancyfoot[L]{\small GIẢI TÍCH HÀM}
+	\fancyfoot[R]{Mã môn: MTH10403}
+	\renewcommand{\headrulewidth}{0.6pt}
+	\renewcommand{\footrulewidth}{0.6pt}
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+\AddToShipoutPictureBG{%
+	\AtPageCenter{%
+		\makebox[0pt]{%
+			\rotatebox[origin=c]{45}{%
+				\scalebox{6}{%
+					\textcolor{gray!20}{Đề thi Giải tích hàm}%
+				}%
+			}%
+		}%
+	}%
+}
+\section{Đề thi giữa học kì}
+\subsection{Đề thi giữa học kì II Giải tích hàm, 2016 - 2017}
+\begin{center}
+	\color{blue}(Ngày thi: 18/04/2017; Thời gian: 45 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black} Cho không gian vector $X$ trên trường $\mathbb F=\mathbb R,\mathbb C$.\\\\
+\color{red}a) \color{black}Giả sử $X$ có một chuẩn kí hiệu là $\lVert~\cdot~\rVert.$ Chứng tỏ nếu ta đặt $d(x,y)=\lVert x-y\rVert$ thì đây là một metric\\ trên $X$. Vậy chuẩn sinh ra metric. Chứng tỏ rằng với $\forall x,y,z\in X$ và $\forall\alpha\in\mathbb F$ thì metric này thỏa: $$\begin{cases}
+	d(x+z,y+z)=d(x,y)\\
+	d(\alpha x,\alpha y)=|\alpha|d(x,y)
+\end{cases}~~~~(*)$$
+\color{red}b) \color{black}Ngược lại, giả sử có metric $X$ thỏa $(*)$. Chứng tỏ nếu ta đặt $\lVert x\rVert=d(x,0)$ thì đây là một chuẩn trên $X$. Chứng tỏ ta lại có $d(x,y)=\lVert x-y\rVert$. Vậy metric thỏa $(*)$ được sinh ra bởi chuẩn.\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Xét $X=C([0,1],\mathbb R)$ là không gian định chuẩn các hàm liên tục từ $[0,1]$ vào $\mathbb R$ với chuẩn $$\lVert f\rVert=\sup\{|f(x)|~|~x\in[0,1]\}$$
+\color{red}a) \color{black}Chứng tỏ một dãy trong $X$ mà hội tụ trong $X$ thì phải hội tụ từng điểm.\\\\
+\color{red}b) \color{black}Đặt $f_n(x)=\dfrac{x^n}{n}$. Dãy $(f_n)_{n\in\mathbb Z^+}$ có hội tụ từng điểm hay không? Có hội tụ trong $X$ hay không?\\\\
+\color{red}c) \color{black}Đặt $f_n(x)=x^n$. Dãy $(f_n)_{n\in\mathbb Z^+}$ có hội tụ từng điểm hay không? Có hội tụ trong $X$ hay không? Có là dãy\\ Cauchy hay không?
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Giải tích hàm, 2017 - 2018}
+\begin{center}
+	\color{blue}(Ngày thi: 10/04/2018; Thời gian: 45 phút)
+\end{center}
+Cho $X=C([0,1],\mathbb R)$ là không gian vector các hàm liên tục trên $[0,1]$. Trên $X$, ta xét hai chuẩn: $$\lVert f\rVert_\infty=\sup\{|f(x)|~|~x\in[0,1]\}~~~~~~~~~~~~~~\lVert f\rVert_2=\left(\displaystyle\int_0^1|f(x)|^2\text{d}x\right)^{\frac12}$$
+Với $n\in\mathbb N,~x\in[0,1]$, ta đặt: $$f_n(x)=\dfrac{1}{\sqrt{1+e^{nx}}}$$\\\\
+\color{red}a) \color{black}Chứng tỏ $f_n\in X$. Vẽ phác họa đồ thị của $f_n$ tại $n=0,1,2$.\\\\
+\color{red}b) \color{black} Tính $\lVert f_n\rVert_\infty$.\\\\
+\color{red}c) \color{black} Tìm giới hạn từng điểm của dãy $(f_n)_{n\in\mathbb{N}}$. Hàm vừa tìm được có thuộc $X$ hay không?\\\\
+\color{red}d) \color{black} Chứng tỏ nếu dãy $(f_n)_{n\in\mathbb{N}}$ hội tụ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ về $g\in X$ (hội tụ đều) thì phải hội tụ từng điểm về\\ $g$, tức là $\forall x\in[0,1]$ thì $\displaystyle\lim_{n\rightarrow\infty}f_n(x)=g(x)$.\\\\
+\color{red}e) \color{black} Dãy $(f_n)_{n\in\mathbb{N}}$ có hội tụ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ hay không?\\\\
+\color{red}f) \color{black} Tính $\lVert f_n\rVert_2$.\\\\
+\color{red}g) \color{black} Tính $\displaystyle\lim_{n\rightarrow\infty}\lVert f_n\rVert_2$.\\\\
+\color{red}h) \color{black} Chứng tỏ dãy $(f_n)_{n\in\mathbb{N}}$ hội tụ trong $\left(X,\lVert~\cdot~\rVert_2\right)$ về 0.\\\\
+\color{red}i) \color{black} Chứng minh rằng một dãy bất kì $(h_n)_{n\in\mathbb{N}}$ hội tụ về $h$ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ thì cũng hội tụ trong $\left(X,\lVert~\cdot~\rVert_2\right)$.\\\\
+\color{red}j) \color{black} Giải thích vì sao 2 chuẩn $\lVert~\cdot~\rVert_\infty$ và $\lVert~\cdot~\rVert_2$ không tương đương trên $X$.
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Giải tích hàm, 2018 - 2019}
+\begin{center}
+	\color{blue}(Thời gian: 60 phút)
+\end{center}
+Cho $X=C([0,1],\mathbb R)$ là không gian các hàm số liên tục trên $[0,1]$. Trên $X$, ta xét hai chuẩn: $$\lVert u\rVert_\infty=\sup\{|u(t)|~|~t\in[0,1]\}~~~~~~~~~~~~~~\lVert u\rVert_2=\left(\displaystyle\int_0^1|u(t)|^2\text{d}t\right)^{\frac12}$$
+Với $n\in\mathbb N,~x\in[0,1]$, ta đặt: $$f_n(x)=\dfrac{1}{1+nx}$$\\\\
+\color{red}a) \color{black}Hỏi $f_n$ có thuộc $X$ không? Vì sao? Hỏi dãy $\{f_n\}$ có hội tụ từng điểm không?\\\\
+\color{red}b) \color{black}Tìm $\lVert f_n\rVert_\infty$.\\\\
+\color{red}c) \color{black}Chứng minh rằng một dãy $\{g_n\}$ bất kì hội tụ về $g$ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ thì nó cũng hội tụ điểm về $g$.\\\\
+\color{red}d) \color{black}Hỏi dãy $\{f_n\}$ có hội tụ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ không?\\\\
+\color{red}e) \color{black}Tính $\lVert f_n\rVert_2$. Hỏi dãy $\{f_n\}$ có hội tụ trong $\left(X,\lVert~\cdot~\rVert_2\right)$ không?\\\\
+\color{red}f) \color{black}Giải thích vì sao hai chuẩn đã cho ở trên lại không tương đương.\\\\
+\color{red}g) \color{black}Chứng minh rằng một dãy $\{g_n\}$ bất kì hội tụ về $g$ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ thì nó cũng hội tụ trong $\left(X,\lVert~\cdot~\rVert_2\right)$.\\\\
+\color{red}h) \color{black}Cho $\{h_n\}$ là dãy đơn điệu giảm hội tụ điểm về 0. Cho $\varepsilon>0$ bất kì, đặt $A_n=\{x:h_n(x)<\varepsilon\}$. Chứng\\ minh rằng dãy tập hợp $\{A_n\}$ là bao phủ mở của $[0,1]$ và $A_n\subset A_{n+1}$. Từ đó chỉ ra rằng, tồn tại số tự nhiên $N$ sao cho $A_N=[0,1]$ và $\{h_n\}$ hội tụ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$.
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Giải tích hàm, 2020 - 2021}
+\begin{center}
+	\color{blue}(Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black} Trên $X=C([0,1],\mathbb R)$, ta trang bị chuẩn sau: $$\lVert f\rVert_\omega:=\displaystyle\sup_{0\le x\le1}\{e^{-x}|f(x)|\}$$
+\color{red}a) \color{black}Kiểm tra $\lVert f\rVert_\omega$ là một chuẩn trên $X$.\\\\
+\color{red}b) \color{black}Chứng minh chuẩn $\lVert~\cdot~\rVert_\omega$ tương đương với chuẩn sup $\lVert~\cdot~\rVert_\infty$.\\\\
+\color{red}\underline{\textbf{Bài 2 (6 điểm):}} \color{black} Cho $X=C([-1,1],\mathbb R)$, trên đó trang bị chuẩn sup thông thường $\lVert~\cdot~\rVert_\infty$. Cho dãy hàm: $$f_n(x)=\begin{cases}
+\begin{array}{ll}
+	1, & -1\le x<-\dfrac1n\\\\
+	\dfrac n2\left(\dfrac1n-x\right), & -\dfrac1n\le x<\dfrac1n\\\\
+	0, & \dfrac1n\le x\le1
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Giải thích vì sao $f_n\in X$ và vẽ đồ thị.\\\\
+\color{red}b) \color{black}Chứng minh $(f_n)_{n\ge1}$ hội tụ điểm trên $[-1,1]$ về một hàm $f$. Tìm $f$.\\\\
+\color{red}c) \color{black}Chứng minh một dãy bất kì trong $X$ mà hội tụ theo chuẩn sup thì nó cũng hội tụ điểm trên $[-1,1]$.\\\\
+\color{red}d) \color{black}Dãy $(f_n)_{n\ge1}$ có hội tụ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ không? Vì sao?
+
+\newpage
+ 
+\subsection{Đề thi giữa học kì I Giải tích hàm, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 04/11/2022; Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}}\\\\
+a) \color{black}Chứng tỏ trong không gian metric $(X,d)$, dãy $(x_n)_{n\in\mathbb Z^+}$ hội tụ về $x$ khi và chỉ khi dãy $(d(x_n,x))_{n\in\mathbb Z^+}$ hội\\ tụ về 0. Ngắn gọn hơn, dãy $x_n$ hội tụ về $x$ khi và chỉ khi khoảng cách từ $x_n$ tới $x$ hội tụ về 0. Bằng kí hiệu thì: $$x_n\xrightarrow{n\rightarrow\infty}x~\Longleftrightarrow~ d(x_n,x)\xrightarrow{n\rightarrow\infty}0$$
+\color{red}b) \color{black}Hãy phát biểu lại mệnh đề ở câu a trong trường hợp $X$ là một không gian định chuẩn.\\\\
+\color{red}c) \color{black}Cho $x_n=\left(1,\dfrac12,\dfrac13,\dfrac14,\dots,\dfrac1n,0,0,0,\dots\right)$. Kiểm tra $x_n\in\ell^2$. Tính $\lVert x_n\rVert$.\\\\
+\color{red}d) \color{black}Cho $x=\left(1,\dfrac12,\dfrac13,\dfrac14,\dots,\dfrac1n,\dots\right)$. Kiểm tra $x\in\ell^2$. Tính $\lVert x\rVert$.\\\\
+\color{red}e) \color{black}Tính $\lVert x_n-x\rVert$.\\\\
+\color{red}f) \color{black}Sử dụng câu a và b, hãy chứng tỏ dãy $(x_n)_{n\in\mathbb Z^+}$ hội tụ về $x$ trong $\ell^2$.\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Xét không gian định chuẩn $C([-1,1],\mathbb R)$ với chuẩn sup.\\\\
+\color{red}a) \color{black}Chứng minh rằng trong $C([-1,1],\mathbb R)$, hội tụ theo chuẩn thì dẫn đến hội tụ từng điểm, tức là $$f_n\xrightarrow{n\rightarrow\infty}f~\Longrightarrow~f_n(x)\xrightarrow{n\rightarrow\infty}f(x),~\forall x\in[-1,1].$$
+\color{red}b) \color{black}Với $n\in\mathbb Z^+$ và $x\in[-1,1]$, đặt: $$f_n(x)=\dfrac{1}{1+n^2x^2}$$ Hình bên dưới là đồ thị của $(f_n)$ với $1\le n\le5$. Kiểm tra $f_n\in C([-1,1],\mathbb R)$.\\\\
+\color{red}c) \color{black}Tính $\lVert f_n\rVert$.\\\\
+\color{red}d) \color{black}Tìm giới hạn từng điểm của dãy $(f_n)_{n\in\mathbb Z^+}$, tức $f(x)=\displaystyle\lim_{n\rightarrow\infty}f_n(x)$.\\\\
+\color{red}e) \color{black}Hàm $f$ vừa tìm được có thuộc $C([-1,1],\mathbb R)$ không?\\\\
+\color{red}f) \color{black}Kết luận $(f_n)_{n\in\mathbb Z^+}$ có hội tụ trong $C([-1,1],\mathbb R)$ hay không?
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{2.8.23.png}
+\end{center}
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Giải tích hàm, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 28/04/2023; Thời gian: 60 phút)
+\end{center}
+\begin{center}
+	\color{blue}\underline{\textbf{ĐỀ THI DÀNH CHO LỚP 21TTH2}}
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (3 điểm):}} \color{black}Cho một tập hợp $X$ bất kỳ. Ta đặt hàm: $$d(x,y)=\begin{cases}
+	1,~~x\ne y\\
+	0,~~x=y
+\end{cases}$$
+\color{red}a) \color{black}Chứng minh rằng $(X,d)$ là một không gian metric.\\\\
+\color{red}b) \color{black}Chứng minh rằng $(X,d)$ là không gian đầy đủ.\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Cho $X:=C([0,2],\mathbb R)$ với chuẩn sup thông thường. Cho dãy hàm: $$f_n(x)=\begin{cases}
+\begin{array}{ll}
+n^2x^2, & 0\le x<\dfrac1n\\\\
+n^2\left(x-\dfrac2n\right)^2, & \dfrac1n\le x<\dfrac2n\\\\
+0, & \dfrac2n\le x\le2
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Giải thích vì sao $f_n\in X$ và vẽ đồ thị của $f_n(x)$ với $n=1,~n=2$.\\\\
+\color{red}b) \color{black}Chứng minh dãy $(f_n)$ hội tụ từng điểm trên $[0,2]$ về một hàm $f$. Tìm $f$.\\\\
+\color{red}c) \color{black}Dãy $(f_n)_{n\in\mathbb Z^+}$ có hội tụ trong $\left(X,\lVert~\cdot~\rVert_\infty\right)$ hay không? Vì sao?\\\\
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}} \color{black}Cho dãy hàm $(f_n)_{n\in\mathbb Z^+}$ trong $C^2([0,1],\mathbb R)$ thỏa điều kiện $f_n(0)=f_n'(0)$ với mọi $n$. Chứng\\ minh rằng nếu $|f_n'(x)|\le1$ với mọi $n\in\mathbb Z^+$ và với mọi $x\in[0,1]$ thì tồn tại một dãy con của $(f_n)$ hội tụ đều trên $[0,1]$.
+\begin{center}
+	\color{blue}\underline{\textbf{ĐỀ THI DÀNH CHO LỚP CỬ NHÂN TÀI NĂNG}}
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho ánh xạ $T:C([-1,1])\rightarrow\mathbb R$ có dạng: $$Tf=-2f(0)+\displaystyle\int_{-1}^1xf(x)\text{d}x$$
+\color{red}a) \color{black}Chứng minh $T$ là ánh xạ tuyến tính.\\\\
+\color{red}b) \color{black}Chứng minh $T$ bị chặn.\\\\
+\color{red}c) \color{black}Tính chính xác $\lVert T\rVert$.\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Cho $X,Y$ là hai không gian Banach. Cho $T_n:X\rightarrow Y$ là các ánh xạ tuyến tính liên\\ tục thỏa $T_nz$ hội tụ với $\forall z\in X$.\\\\
+\color{red}a) \color{black}Đặt $T_z=\displaystyle\lim_{n\rightarrow\infty}T_nz$. Chứng minh $Tz$ tuyến tính và bị chặn.\\\\
+\color{red}b) \color{black}Cho dãy $(x_n)$ và giá trị $x$ thuộc $X$. Giả sử $x_n\rightarrow x$ trong $X$. Hỏi $T_nx_n$ có hội tụ về $Tx$ không? Giải thích.
+ 
+\newpage
+
+\subsection{Đề thi giữa học kì hè Giải tích hàm, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 09/08/2023; Thời gian: 60 phút; Lớp 20TTH\_HE)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Cho không gian $X:=C([0,2],\mathbb R)$ với chuẩn sup thông thường $\lVert~\cdot~\rVert_\infty$. Cho dãy hàm:$$f_n(x)=\begin{cases}
+\begin{array}{ll}
+	2x, & 0\le x\le\dfrac1n\\\\
+	\dfrac{4-2x}{2n-1}, & \dfrac1n<x\le2
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Giải thích vì sao $f_n\in X$.\\\\
+\color{red}b) \color{black}Chứng minh dãy $(f_n)_{n\in\mathbb Z^+}$ hội tụ điểm trên $[0,2]$ về một hàm $f$. Tìm $f$.\\\\
+\color{red}c) \color{black}Dãy $(f_n)_{n\in\mathbb Z^+}$ có hội tụ trong $(X,\lVert~\cdot~\rVert_\infty)$ hay không? Vì sao?\\\\
+\color{red}d) \color{black}Với chuẩn $\lVert f\rVert_1=\displaystyle\int_0^2|f(x)|\text{d}x$, dãy $(f_n)_{n\in\mathbb Z^+}$ có hội tụ trong $(X,\lVert~\cdot~\rVert_1)$ hay không? Vì sao?\\\\
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}} \color{black}Trên trường số thực, xét ánh xạ $T:\ell^2\rightarrow\mathbb R$ xác định bởi: $$Tx=\displaystyle\sum_{n=1}^\infty\dfrac{x_n}{2^n}$$ với mọi $x=(x_n)_{n\in\mathbb Z^+}\in\ell^2$.\\\\
+\color{red}a) \color{black}Chứng minh rằng $T$ là ánh xạ được định nghĩa tốt, nghĩa là chứng minh $Tx$ hội tụ.\\\\
+\color{red}b) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Tính $\lVert T\rVert$.\\\\
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}} \color{black}Cho dãy hàm $(f_n)_{n\in\mathbb Z^+}$ được định nghĩa bởi $f_n(x)=x^n$ với $\forall x\in[0,1]$.\\\\
+\color{red}a) \color{black}Chứng minh rằng dãy $(f_n)_{n\in\mathbb Z^+}$ không chứa bất kỳ dãy con hội tụ đều trong $(C([0,1],\mathbb R),\lVert~\cdot~\rVert_\infty)$.\\\\
+\color{red}b) \color{black}Điều này có trái với kết luận của Định lý Arzelà - Ascoli không? Tại sao?
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Giải tích hàm, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 27/04/2024; Thời gian: 60 phút; Lớp: 22TTH1)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho dãy hàm $(f_n)_{n\in\mathbb Z^+}$ với: $$f_n(x)=x-\dfrac{x^n}{n+2024},~~\forall x\in[0,1]$$
+\color{red}a) \color{black}Tìm giới hạn hội tụ điểm $f$ của $(f_n)$.\\\\
+\color{red}b) \color{black}Hỏi $f_n$ có hội tụ đến $f$ trong $C([0,1])$ với chuẩn $\lVert~\cdot~\rVert_\infty$ không? Giải thích.\\\\
+\color{red}c) \color{black}Tính $\lVert f_n-f\rVert_1$. Hỏi $f_n$ có hội tụ đến $f$ trong $C([0,1])$ với chuẩn $\lVert~\cdot~\rVert_1$ không?\\\\
+\color{red}d) \color{black}Tính $\lVert f_n-f\rVert_2$. Hỏi $f_n$ có hội tụ đến $f$ trong $C([0,1])$ với chuẩn $\lVert~\cdot~\rVert_2$ không?\\\\
+\color{red}\underline{\textbf{Bài 2 (2 điểm):}} \color{black}Cho bốn số thực $a,b,p,q$ thỏa $1\le p\le q<\infty$ và $a<b$. Trên $C([a,b])$, chứng tỏ rằng nếu dãy hàm $f_n$ hội tụ đến $f$ theo chuẩn $\lVert~\cdot~\rVert_q$ thì $f_n$ hội tụ đến $f$ theo chuẩn $\lVert~\cdot~\rVert_p$.\\\\
+\color{red}\underline{\textbf{Bài 3 (3 điểm):}} \color{black}Trong không gian $C([0,\pi])$, cho dãy hàm $(f_n)_{n\in\mathbb Z^+}$ với: $$f_n(x)=\sin(2^nx),~~\forall x\in[0,\pi]$$
+\color{red}a) \color{black}Chứng tỏ $\lVert f_n-f_m\rVert_\infty\ge1$ với mọi số nguyên dương $m\ne n$.\\\\
+\color{red}b) \color{black}Chứng tỏ rằng dãy $(f_n)$ không chứa bất kỳ dãy con hội tụ đều trong $C([0,\pi])$ dưới chuẩn $\lVert~\cdot~\rVert_\infty$. Điều\\ này có mâu thuẫn với kết luận của Định lý Arzelà - Ascoli không? Tại sao?
+\newpage
+
+\section{Đề thi cuối học kì}
+
+\subsection{Đề thi cuối học kì Giải tích hàm, ???? - ???? (Đề bí ẩn 1)}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút; Sinh viên chọn ra 5/6 câu để giải)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $\lVert~\cdot~\rVert_1$ và $\lVert~\cdot~\rVert_2$ là hai chuẩn trên một không gian vector $E$. Đặt $$\lVert x\rVert=\lVert x\rVert_1+\lVert x\rVert_2,~~\forall x\in E$$ Hỏi $\lVert~\cdot~\rVert$ có là một chuẩn trên $E$ không?\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Cho $(E,\lVert~\cdot~\rVert)$ là một không gian định chuẩn và $E\ne\{0\}$. Chứng minh quả cầu đóng $B'(0,1)$ khác\\ quả cầu mở $B(0,1)$.\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Cho $x$ là một vector trong không gian Banach $(E,\lVert~\cdot~\rVert)$. Dùng Định lý Hahn - Banach, chứng minh: $$\lVert x\rVert=\sup\{T(x):T\in L(E,\mathbb R),~\lVert T\rVert\le1\}$$
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $\{e_i\}_{i\in\mathbb N}$ là một họ trực chuẩn trong một không gian Hilbert phức $H$. Hỏi có hay không một dãy $\{\alpha_i\}_{i\in\mathbb N}$ trong tập $\{z\in\mathbb C:|z|=2\}$ sao cho dãy $\{\alpha_ie_i\}_{i\in\mathbb N}$ hội tụ trong $H$?\\\\
+\color{red}\underline{\textbf{Bài 5:}} \color{black}Cho $B(a,r)$ là một quả cầu mở trong không gian định chuẩn thực $(E,\lVert~\cdot~\rVert)$, và $T$ là một ánh xạ tuyến tính từ $E$ vào $\mathbb R$ sao cho tập $T(B(a,r))$ bị chặn trong $\mathbb R$. Hỏi $T$ có liên tục tại $a$ không?\\\\
+\color{red}\underline{\textbf{Bài 6:}} \color{black}Cho $a$ là một vector trong $E$ với $E$ là không gian định chuẩn và $T$ là ánh xạ tuyến tính liên tục từ\\ $E$ vào $E$. Giả sử $\lVert T\rVert<1$. Đặt $a_1=T(a)$ và $a_{k+1}=T(a_k)$ với mọi số nguyên dương $k$. Hỏi $\sum_{m=1}^\infty a_m$ có hội tụ trong $E$ không?
+\newpage
+
+\subsection{Đề thi cuối học kì Giải tích hàm, ???? - ???? (Đề bí ẩn 2)}
+\begin{center}
+	\color{blue}(Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $T$ là một ánh xạ tuyến tính liên tục từ không gian định chuẩn $(E,\lVert~\cdot~\rVert_E)$ vào không gian định chuẩn $(F,\lVert~\cdot~\rVert_F)$. Với $$\lVert T\rVert=\displaystyle\sup_{\lVert x\rVert_E\le1}\lVert T(x)\rVert_F,$$ chứng minh rằng:\\\\
+\color{red}i) \color{black}$\lVert T\rVert=\displaystyle\sup_{\lVert x\rVert_E=1}\lVert T(x)\rVert_F$.\\\\
+\color{red}ii) \color{black}$\lVert T\rVert=\displaystyle\sup_{\lVert x\rVert_E<1}\lVert T(x)\rVert_F$.\\\\
+\color{red}iii) \color{black}$\lVert T\rVert=\displaystyle\sup_{\lVert x\rVert_E\ne0}\dfrac{\lVert T(x)\rVert_F}{\lVert x\rVert_E}$.\\\\\\
+\color{red}iv) \color{black}$\lVert T\rVert=\inf\{M>0:\lVert T(x)\rVert_F\le M\lVert x\rVert_E,~\forall x\in E\}$.\\\\
+\color{red}v) \color{black}$\lVert T(x)\rVert_F\le\lVert T\rVert\lVert x\rVert_E,~\forall x\in E$.\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Với $x=(x_1,x_2,\ldots,x_n)\in\mathbb R^n$, xét: $$\lVert x\rVert_\infty=\displaystyle\max_{1\le i\le n}|x_i|,~\lVert x\rVert_1=\displaystyle\sum_{i=1}^n|x_i|~\text{ và }~\lVert x\rVert_2=\sqrt{\displaystyle\sum_{i=1}^nx_i^2}$$
+\color{red}i) \color{black}Chứng minh rằng $\lVert~\cdot~\rVert_\infty,\lVert~\cdot~\rVert_1$ và $\lVert~\cdot~\rVert_2$ là các chuẩn trên $\mathbb R^n$.\\\\
+\color{red}ii) \color{black}Chứng tỏ rằng $\lVert x\rVert_\infty\le\lVert x\rVert_2\le\lVert x\rVert_1\le n\lVert x\rVert_\infty$ với mọi $x\in\mathbb R^n$.\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Cho $(E,\lVert~\cdot~\rVert_1)$ là một không gian Banach và $\lVert~\cdot~\rVert_2$ là một chuẩn trên $E$ sao cho tồn tại các số dương $\alpha,\beta$ để $\alpha\lVert x\rVert_1\le\lVert x\rVert_2\le\beta\lVert x\rVert_1$ với mọi $x\in E$. Chứng minh rằng $(E,\lVert~\cdot~\rVert_2)$ cũng là một không gian Banach.\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $E$ và $F$ là hai không gian Banach và $T$ là một song ánh tuyến tính liên tục từ $E$ vào $F$. Chứng minh rằng $T^{-1}$ là một ánh xạ tuyến tính liên tục từ $F$ vào $E$.
+\newpage
+
+\subsection{Đề thi cuối học kì I Giải tích hàm, 2006 - 2007}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút; Sinh viên chọn ra 5/6 câu để giải)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $\{x_n\}$ là dãy Cauchy trong không gian định chuẩn $(E,\lVert~\cdot~\rVert)$. Chứng minh $\{\lVert x_n\rVert\}$ là một dãy hội tụ trong $\mathbb R$.\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Cho $a$ và $b$ là các vector trong không gian định chuẩn $(E,\lVert~\cdot~\rVert)$. Giả sử $\lVert a\rVert<1<\lVert b\rVert$. Chứng minh\\ rằng có tồn tại $t\in(0,1)$ sao cho $\lVert ta+(1-t)b\rVert=1$.\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Cho $E=C([0,1],\mathbb R)$ và $\lVert x\rVert=\displaystyle\sup_{t\in[0,1]}|x(t)|$ với mọi $x\in E$. Đặt $$T(x)=\displaystyle\sum_{n=1}^\infty\dfrac1n\displaystyle\int_{\frac{1}{n+1}}^{\frac1n}x(t)\text{d}t$$
+Hỏi $T$ có là ánh xạ tuyến tính liên tục từ $E$ vào $\mathbb R$ hay không?\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $\lVert~\cdot~\rVert$ là một chuẩn trên $\mathbb R^n$ và $T$ là một ánh xạ tuyến tính từ $(\mathbb R^n,\lVert~\cdot~\rVert)$ vào $\mathbb R$. Chứng minh\\ rằng chỉ có duy nhất một bộ $n$ số thực $\{a_1,a_2,\dots,a_n\}$ sao cho: $$T((x_1,\dots,x_n))=a_1x_1+\dots+a_nx_n,~~\forall(x_1,\dots,x_n)\in\mathbb R^n.$$
+\color{red}\underline{\textbf{Bài 5:}} \color{black}Cho $\{u_1,\dots,u_m\}$ là một họ trực chuẩn trong không gian Hilbert hữu hạn chiều $H$. Giả sử $\{u_1,\dots,u_m\}$ là một cơ sở của $H$. Hỏi $\{u_1,\dots,u_m\}$ có là một họ trực chuẩn cực đại trong $H$ không?\\\\
+\color{red}\underline{\textbf{Bài 6:}} \color{black}Cho $\{u_i\}_{i\in I}$ là một họ trực chuẩn cực đại trong không gian Hilbert $(H,\lVert~\cdot~\rVert)$ với tích vô hướng $\langle\cdot,\cdot\rangle$.\\ Cho $x,y\in H$ sao cho $|\langle x,u_i\rangle|\le|\langle y,u_i\rangle|$ với mọi $i$ trong $I$. Hỏi $\lVert x\rVert\le\lVert y\rVert$ là đúng hay sai?
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2007 - 2008}
+\begin{center}
+	\color{blue}(Ngày thi: 16/06/2008; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $(X,d)$ là một không gian metric và $A$ là tập con khác rỗng của $X$. Với mỗi $x\in X$, ta đặt: $$\varphi(x)=d(x,A)=\displaystyle\inf_{a\in A}d(x,a)$$
+\color{red}a) \color{black}Chứng minh rằng $|\varphi(x)-\varphi(y)|\le d(x,y)$ với $\forall x,y\in X$. Từ đó suy ra $\varphi:X\rightarrow\mathbb R$ là hàm liên tục đều.\\\\
+\color{red}b) \color{black}Chứng minh rằng $\varphi(x)=0$ khi và chỉ khi $x\in\overline A$, với $\overline A$ là bao đóng của $A$ trong $X$. Từ đó suy ra nếu\\ $A,B$ là hai tập con đóng, không rỗng của $X$ sao cho $A\cap B\ne\varnothing$ thì tồn tại hàm số liên tục $f:X\rightarrow[0,1]$ sao cho $f(x)=0$ với mọi $x\in A$ và $f(x)=1$ với mọi $x\in B$.\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Cho $E,F$ là hai không gian định chuẩn, và $L(E,F)$ là không gian vector các ánh xạ tuyến tính liên tục từ $E$ vào $F$. Với mỗi $T\in L(E,F)$, đặt: $$\lVert T\rVert_{L(E,F)}=\displaystyle\sup_{\lVert x\rVert_E\le1}\lVert T(x)\rVert_F$$ Chứng minh rằng:\\\\
+\color{red}a) \color{black}$T\rightarrow\lVert T(x)\rVert_{L(E,F)}$ là một chuẩn trên $L(E,F)$.\\\\
+\color{red}b) \color{black}$\lVert T(x)\rVert_F\le\lVert T(x)\rVert_{L(E,F)}\lVert x\rVert_E$ với mọi $x\in E$.\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Cho $E,F$ là hai không gian Banach và $T:E\rightarrow F$ là một \textbf{song ánh} tuyến tính liên tục. Đặt $S=T^{-1}$. Chứng minh:\\\\
+\color{red}a) \color{black}$S$ là một ánh xạ tuyến tính từ $F$ vào $E$.\\\\
+\color{red}b) \color{black}$S\in L(E,F)$ và $\lVert S\rVert_{L(E,F)}\ge\lVert T\rVert_{L(E,F)}^{-1}$.\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $E$ là một không gian định chuẩn và $x\in E$.\\\\
+\color{red}a) \color{black}Chứng minh rằng có tồn tại $T\in L(E,\mathbb R)\equiv E^*$ sao cho $\lVert T\rVert=1$ và $Tx=\lVert x\rVert$.\\\\
+\color{red}b) \color{black}Chứng minh rằng: $$\lVert x\rVert=\displaystyle\sup_{T\in E^*,\lVert T\rVert\le1}|Tx|$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2008 - 2009}
+\begin{center}
+	\color{blue}(Ngày thi: 15/06/2009; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $(X,d)$ là một không gian metric và $A$ là tập con khác rỗng của $X$. Với mỗi $x\in X$, ta xét ánh xạ\\ $\varphi:X\rightarrow\mathbb R$ xác định bởi: $$\varphi(x)=\displaystyle\inf_{a\in A}d(x,a)$$
+\color{red}a) \color{black}Chứng minh rằng $|\varphi(x)-\varphi(y)|\le d(x,y)$ với $\forall x,y\in X$.\\\\
+\color{red}b) \color{black}Chứng minh rằng $\varphi(x)=0$ khi và chỉ khi $x\in\overline A$, với $\overline A$ là bao đóng của $A$ trong $X$. Từ đó suy ra nếu\\ $A,B$ là hai tập con đóng, không rỗng của $X$ sao cho $A\cap B\ne\varnothing$ thì tồn tại hàm số liên tục $f:X\rightarrow[0,1]$ sao cho $f(x)=0$ với mọi $x\in A$ và $f(x)=1$ với mọi $x\in B$.\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Cho $E,F$ là hai không gian định chuẩn, và $L(E,F)$ là không gian vector các ánh xạ tuyến tính liên\\ tục từ $E$ vào $F$. Với mỗi $\Lambda\in L(E,F)$, đặt: $$\lVert\Lambda\rVert_{L(E,F)}=\displaystyle\sup_{\lVert x\rVert_E=1}\lVert\Lambda(x)\rVert_F$$ Chứng minh rằng:\\\\
+\color{red}a) \color{black}$\Lambda\rightarrow\lVert\Lambda(x)\rVert_{L(E,F)}$ là một chuẩn trên $L(E,F)$.\\\\
+\color{red}b) \color{black}$\lVert\Lambda(x)\rVert_F\le\lVert\Lambda(x)\rVert_{L(E,F)}\lVert x\rVert_E$ với mọi $x\in E$.\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Gọi $E=C([0,1],\mathbb R)$ là không gian các ánh xạ liên tục từ $[0,1]$ vào $\mathbb R$. Với mỗi $x\in E$, đặt: $$\lVert x\rVert=\displaystyle\int_0^1|x(t)|\text{d}t$$
+\color{red}a) \color{black}Chứng minh $(E,\lVert~\cdot~\rVert)$ là một không gian định chuẩn.\\\\
+\color{red}b) \color{black}Xét dãy $(x_n)\subset E$ xác định bởi: $$x_n(t)=\begin{cases}
+\begin{array}{ll}
+0, & 0\le t\le\dfrac12\\\\
+n(2t-1), & \dfrac12<t\le\dfrac12+\dfrac{1}{2n}\\\\
+1, & \dfrac12<t\le1
+\end{array}
+\end{cases}$$
+Chứng tỏ rằng $(x_n)$ là dãy Cauchy nhưng không hội tụ trong $(E,\lVert~\cdot~\rVert)$.\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $E$ là không gian định chuẩn và $x\in E$. Chứng minh rằng: $$\lVert x\rVert=\displaystyle\sup_{\Lambda\in E^*,\lVert\Lambda\rVert\le1}|\Lambda x|,$$
+trong đó $E^*\equiv L(E,\mathbb R)$ là không gian các ánh xạ tuyến tính liên tục từ $E$ vào $\mathbb R$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2009 - 2010}
+\begin{center}
+	\color{blue}(Ngày thi: 25/06/2010; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $f,g$ là hai ánh xạ liên tục từ không gian metric $X$ đến không gian metric $Y$, và $A$ là một tập con khác rỗng của $X$ sao cho $f(x)=g(x)$ với $\forall x\in A$. Chứng minh rằng $f(x)=g(x)$ với $\forall x\in\overline A$.\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Cho $X$ là không gian metric, $G$ là một tập mở trong $X$ và $A\subset X$. Chứng minh rằng nếu $G\cap A\ne\varnothing$ thì $G\cap\overline A\ne\varnothing$.\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Cho $(E,\lVert~\cdot~\rVert_1)$ là không gian Banach và $\lVert~\cdot~\rVert_2$ là một chuẩn trên $E$ sao cho với $\forall\alpha,\beta>0$ thì: $$\alpha\lVert x\rVert_1\le\lVert x\rVert_2\le\beta\lVert x\rVert_1,~~\forall x\in E.$$
+Chứng minh rằng $(E,\lVert~\cdot~\rVert_2)$ là không gian Banach.\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $(E,\lVert~\cdot~\rVert_E)$ là một không gian định chuẩn. Đặt $\Gamma=\{(x,x):x\in E\}$. Chứng minh $\Gamma$ là một không\\ gian vector con đóng trong không gian định chuẩn $E\times E$.\\\\
+\color{red}\underline{\textbf{Bài 5:}} \color{black}Cho $\{e_1,e_2,\dots,e_n\}$ là họ trực giao các vector khác 0 trong không gian Hilbert $H$. Chứng minh rằng: $$\left|\displaystyle\sum_{i=1}^ne_i\right|^2=\displaystyle\sum_{i=1}^n|e_i|^2$$
+\color{red}\underline{\textbf{Bài 6:}} \color{black}Cho $K$ là ánh xạ liên tục từ $[0,1]\times[0,1]$ vào $\mathbb R$. Đặt $E=C([0,1])$ là không gian các hàm số liên tục trên $[0,1]$. Với mỗi $x\in E$, ta đặt: $$\lVert x\rVert=\displaystyle\sup_{t\in[0,1]}|x(t)|$$
+\color{red}a) \color{black}Chứng minh rằng $(E,\lVert~\cdot~\rVert)$ là không gian Banach.\\\\
+\color{red}b) \color{black}Với mỗi $x\in E$, đặt: $$T(x)(t)=\displaystyle\int_0^1K(t,s)x(s)\text{d}s,~\forall t\in[0,1]$$
+\text{~~~~~~}\color{red}i) \color{black}Chứng minh $T(x)$ liên tục trên $[0,1]$.\\\\
+\text{~~~~~~}\color{red}ii) \color{black}Chứng minh $T:E\rightarrow E$ là ánh xạ tuyến tính.\\\\
+\text{~~~~~~}\color{red}iii) \color{black}Chứng minh $T$ là ánh xạ liên tục.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2011 - 2012}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1:}} \color{black}Cho $K$ là một tập compact trong một không gian định chuẩn $E$ và $a$ là một vector trong $E$. Hỏi có hay không một vector $b$ trong $K$ sao cho $\lVert a-b\rVert=\inf\{\lVert a-x\rVert:x\in K\}$?\\\\
+\color{red}\underline{\textbf{Bài 2:}} \color{black}Cho $\{x_n\}$ là một dãy hội tụ về $a$ trong một không gian định chuẩn $E$. Cho $\{x_{n_k}\}$ là một dãy con\\ của $\{x_n\}$. Hỏi $\{x_{n_k}\}$ có hội tụ về $a$ trong $E$ hay không?\\\\
+\color{red}\underline{\textbf{Bài 3:}} \color{black}Cho $Y$ là một không gian vector con đóng trong một không gian Banach $(X,\lVert~\cdot~\rVert)$. Đặt: $$\lVert z\rVert_Y=\lVert z\rVert,~\forall z\in Y.$$ Hỏi $(Y,\lVert~\cdot~\rVert_Y)$ có là không gian Banach hay không?\\\\
+\color{red}\underline{\textbf{Bài 4:}} \color{black}Cho $T$ là một ánh xạ tuyến tính từ một không gian định chuẩn $(E,\lVert~\cdot~\rVert_E)$ vào không gian định chuẩn\\ $(F,\lVert~\cdot~\rVert_F)$. Giả sử có hai số thực dương $M$ và $r$ sao cho $\lVert T(x)\rVert_F\le M,~\forall x\in B'(0,r)$. Hỏi $T$ có liên tục trên $E$ hay không?\\\\
+\color{red}\underline{\textbf{Bài 5:}} \color{black}Cho $H$ là một không gian Hilbert thực trên $\mathbb R$ với tích vô hướng $\langle.,.\rangle$, và $a$ là một
+vector trong $H$.\\ Với mọi $x\in H$, đặt $$\alpha(x)=\langle x,a\rangle;~~~~T(x)=\alpha(x)a$$
+Hỏi $T$ có là một ánh xạ tuyến tính liên tục từ $H$ vào $H$ hay không?\\\\
+\color{red}\underline{\textbf{Bài 6:}} \color{black}Cho $H$ là một không gian Hilbert thực trên $\mathbb R$ với tích vô hướng $\langle.,.\rangle$, và $A$ là một tập con khác trống\\ trong $H$. Đặt $$B=\{y\in H:\langle y,x\rangle=0,~\forall x\in A\}$$
+Hỏi $B$ có là một tập đóng trong $H$ hay không?
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2012 - 2013}
+\begin{center}
+	\color{blue}(Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (3 điểm):}} \color{black}Các mệnh đề sau đúng hay sai? Không cần giải thích.\\\\
+\color{red}a) \color{black}Dãy Cauchy thì bị chặn.\\\\
+\color{red}b) \color{black}Dãy bị chặn là dãy Cauchy.\\\\
+\color{red}c) \color{black}Trong không gian Banach, dãy hội tụ là dãy Cauchy.\\\\
+\color{red}d) \color{black}Trong không gian Banach, dãy Cauchy là dãy hội tụ.\\\\
+\color{red}e) \color{black}Trong không gian compact thì dãy Cauchy phải hội tụ.\\\\
+\color{red}f) \color{black}Trong không gian compact thì mọi dãy đều bị chặn.\\\\
+\color{red}g) \color{black}Chuẩn sinh ra metric.\\\\
+\color{red}h) \color{black}Metric sinh ra chuẩn.\\\\
+\color{red}i) \color{black}Tồn tại không gian định chuẩn hữu hạn chiều không đầy đủ.\\\\
+\color{red}j) \color{black}Tồn tại không gian định chuẩn vô hạn chiều không đầy đủ.\\\\
+\color{red}k) \color{black}Tồn tại $p\ge1$ để $\left(1,\dfrac12,\dfrac13,\dfrac14,\dots\right)\in\ell^p$.\\\\
+\color{red}l) \color{black}$C(\mathbb R,\mathbb R)$ là không gian Banach với chuẩn sup.\\\\
+\color{red}\underline{\textbf{Bài 2 (2,5 điểm):}} \color{black}Chứng tỏ hạn chế của một ánh xạ liên tục trên một không gian metric xuống một không gian con là một ánh xạ liên tục. Cụ thể, giả sử $X,Y$ là hai không gian metric và $A\subset X$ là một không gian metric con của $X$. Giả sử $f:X\to Y$ là ánh xạ liên tục. Xét ánh xạ: \begin{align*}
+	f\big|_A:A&\to Y\\
+	x&\mapsto f(x)
+\end{align*}
+Chứng tỏ $f\big|_A$ là ánh xạ liên tục.\\\\
+\color{red}\underline{\textbf{Bài 3 (2,5 điểm):}} \color{black}Chứng tỏ nếu hai chuẩn là tương đương thì tính compact của hai không gian định chuẩn là trùng nhau. Cụ thể, giả sử $\lVert~\cdot~\rVert_a$ và $\lVert~\cdot~\rVert_b$ là hai chuẩn tương đương trên không gian vector $X$, tức là có $\alpha,\beta>0$ sao cho $\forall x\in X$ thì $\alpha\lVert x\rVert_a\le\lVert x\rVert_b\le\beta\lVert x\rVert_a$. Cho $A\subset X$. Chứng tỏ nếu $A$ compact theo chuẩn $\lVert~\cdot~\rVert_a$ thì $A$ compact theo chuẩn $\lVert~\cdot~\rVert_b$.\\\\
+\color{red}\underline{\textbf{Bài 4 (3 điểm):}} \color{black}Trong $X:=C([0,1],\mathbb R)$ với chuẩn $\lVert x\rVert_\infty=\displaystyle\sup_{t\in[0,1]}|x(t)|$, xét: $$A=\left\{f\in X\Big|\displaystyle\int_0^1f(x)\text{d}x<2\right\}$$
+\color{red}a) \color{black}Cho $f_n(x)=2-\dfrac1n$. Chứng tỏ dãy $(f_n)_{n\ge1}$ hội tụ trong $X$.\\\\
+\color{red}b) \color{black}Chứng tỏ $A$ không là tập đóng trong $X$.\\\\
+\color{red}c) (Thưởng 1 điểm) \color{black}$A$ có mở trong $X$ hay không?
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2015 - 2016}
+\begin{center}
+	\color{blue}(Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho $E$ là không gian định chuẩn và $T\in L(E,E)$. Đặt $T^0=\text{Id}_E$, và với $n\in\mathbb Z^+$ ta đặt\\ $T^n=T^{n-1}\circ T$.\\\\
+\color{red}a) \color{black}Chứng tỏ $T^n\in L(E,E)$.\\\\
+\color{red}b) \color{black}Chứng tỏ $\lVert T^n\rVert\le\lVert T\rVert^n$.\\\\
+\color{red}c) \color{black}Nhắc lại rằng với mọi $x\in\mathbb R$, ta có: $$\displaystyle\sum_{i=0}^\infty\dfrac{x^i}{i!}=e^x$$
+Đặt $s_n=\displaystyle\sum_{i=0}^n\dfrac{\lVert T\rVert^i}{i!}$. Chứng tỏ $(s_n)_{n\in\mathbb Z^+}$ là dãy Cauchy trong $\mathbb R$.\\\\
+\color{red}d) \color{black}Đặt $S_n=\displaystyle\sum_{i=0}^n\dfrac{T^i}{i!}$. Chứng tỏ $(S_n)_{n\in\mathbb Z^+}$ là dãy Cauchy trong $L(E,E)$.\\\\
+\color{red}e) \color{black}Giả sử thêm $E$ là một không gian Banach. Chứng tỏ $(S_n)_{n\in\mathbb Z^+}$ hội tụ về một giới hạn trong $L(E,E)$.\\ Giới hạn này thường được kí hiệu là $e^T$, vậy $$\displaystyle\sum_{i=0}^\infty\dfrac{T^i}{i!}=e^T$$
+\color{red}\underline{\textbf{Bài 2 (2 điểm):}} \color{black}Cho $H$ là một không gian Hilbert và $M,N\subset H$. Trong các mệnh đề dưới đây, chỉ ra mệnh\\ đề nào đúng, và không cần giải thích:\\\\
+\color{red}a) \color{black}$M^\perp\ne\varnothing$\\\\
+\color{red}b) \color{black}$M\subset N\Rightarrow M^\perp\subset N^\perp$\\\\
+\color{red}c) \color{black}$M\subset N\Rightarrow N^\perp\subset M^\perp$\\\\
+\color{red}d) \color{black}$M\subsetneq N\Rightarrow N^\perp\subsetneq M^\perp$\\\\
+\color{red}e) \color{black}$M^\perp=\overline M^\perp$\\\\
+\color{red}f) \color{black}$M^\perp=\langle M\rangle^\perp$\\\\
+\color{red}\underline{\textbf{Bài 3 (3 điểm):}} \color{black}Xét không gian Hilbert $L^2([0,1],\mathbb R)$. Gọi $M$ là tập tất cả các hàm hằng trên $[0,1]$.\\\\
+\color{red}a) \color{black}Chứng tỏ $M$ là không gian vector con của $H$.\\\\
+\color{red}b) \color{black}Chứng tỏ $\{1\}$ là một cơ sở trực chuẩn của $M$.\\\\
+\color{red}c) \color{black}Vì sao $M$ là không gian vector con đóng của $H$?\\\\
+\color{red}d) \color{black}Cho hàm $f(x)=x$. Tính $\langle f,1\rangle$.\\\\
+\color{red}e) \color{black}Cho $g=f-\dfrac12$. Chứng tỏ $g\perp M$.\\\\
+\color{red}f) \color{black}Chứng tỏ $P_Mf=\dfrac12$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2017 - 2018}
+\begin{center}
+	\color{blue}(Ngày thi: 19/06/2018; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Cho $X=C([0,1],\mathbb R)$ với chuẩn sup. Xét ánh xạ:\begin{align*}
+	T:X&\rightarrow X\\
+	f&\mapsto Tf
+\end{align*} với \begin{align*}
+Tf:[0,1]&\rightarrow\mathbb R\\
+t&\mapsto\displaystyle\int_0^tf(s)\cos(s)\text{d}s
+\end{align*}
+\color{red}a) \color{black}Giải thích vì sao $Tf\in X$.\\\\
+\color{red}b) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính.\\\\
+\color{red}c) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính liên tục.\\\\
+\color{red}d) \color{black}Hãy ước lượng $\lVert T\rVert$.\\\\
+\color{red}e) \color{black}Hãy tính chính xác $\lVert T\rVert$.\\\\
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}} \color{black}Xét không gian tích trong $H=L^2([0,1])$ trên trường số thực. Tích trong trên $H$ được cho\\ bởi $$\langle u,v\rangle:=\displaystyle\int_0^1u(x)v(x)\text{d}x$$ Xét tập con $E=\{1,\sin2\pi x\}$ của $H$.\\\\
+\color{red}a) \color{black}Tính chuẩn của các phần tử trong $E$.\\\\
+\color{red}b) \color{black}Chứng tỏ $E$ là một họ trực giao trong $H$.\\\\
+\color{red}c) \color{black}Hãy trực chuẩn hóa $E$, tức là tìm một họ trực chuẩn $F$ sinh ra không gian tuyến tính $M$ sinh bởi $E$.\\\\
+\color{red}d) \color{black}Hãy tìm hình chiếu $P_Mf$ với $f(x)=x$.\\\\
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}} \color{black}Cho $H$ là một không gian Hilbert và $M$ là không gian vector con của $H$. Giả sử\\ $x\in H$ có phân tích: $$x=x_1+x_2,~x_1\in M,~x_2\in M^\perp~~~~~~~~~~~~~~~(1)$$
+\color{red}a) \color{black}Chứng tỏ $\lVert x\rVert^2=\lVert x_1\rVert^2+\lVert x_2\rVert^2$.\\\\
+\color{red}b) \color{black}Chứng tỏ phân tích (1) trên là duy nhất, nghĩa là nếu $x=x_1'+x_2',~x_1'\in M,~x_2'\in M^\perp$ thì $x_1=x_1',~x_2=x_2'$.\\\\
+\color{red}c) \color{black}Khi nào thì chắc chắn có phân tích (1) trên?
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2018 - 2019}
+\begin{center}
+	\color{blue}(Ngày thi: 15/06/2019; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Cho $X:=C([2,3],\mathbb R)$ là không gian các hàm số liên tục trên $[2,3]$. Trên $X$, xét chuẩn $$\lVert u\rVert_\infty:=\max\{|u(t)|~|~t\in[2,3]\}$$
+Với mỗi $x\in X$, đặt $T(x)$ là hàm cho bởi:\begin{align*}
+	T(x):[2,3]&\rightarrow\mathbb R\\
+	t&\mapsto T(x)(t)=\displaystyle\int_2^3\left(t^2+1\right)x(s)\text{d}s
+\end{align*}
+\color{red}a) \color{black}Chứng minh rằng $T(x)\in X$.\\\\
+\color{red}b) \color{black}Chứng minh rằng ánh xạ \begin{align*}
+	T:X&\rightarrow X\\
+	x&\mapsto T(x)
+\end{align*} là ánh xạ tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Hãy ước lượng một chặn trên cho chuẩn của $T$.\\\\
+\color{red}d) \color{black}Hãy tính chính xác chuẩn của $T$.\\\\
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}} \color{black}Xét không gian Hilbert $L^2([-1,1],\mathbb R)$ trên trường số thực với tích trong: $$\langle f,g\rangle_{L^2}:=\displaystyle\int_{-1}^1f(t)g(t)\text{d}t$$
+Cho $x_1(t)=1,~x_2(t)=t,~x_3(t)=t^2.$\\\\
+\color{red}a) \color{black}Tính $\lVert x_i\rVert_{L^2}$ với $i=1,2,3$.\\\\
+\color{red}b) \color{black}Trực chuẩn hóa $x_1,x_2,x_3$ theo thứ tự này.\\\\
+\color{red}c) \color{black}Tìm $h\in L^2([-1,1],\mathbb R)$ sao cho $h\ne0$ và $h\perp(x_2+x_3)$.\\\\
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}}\\\\ \color{red}a) \color{black}Cho họ trực chuẩn $\{e_k\}$ trong không gian tích trong $H$. Chứng minh rằng với mọi $x,y\in H$ thì: $$\displaystyle\sum_{k=1}^\infty\left|\langle x,e_k\rangle\langle y,e_k\rangle\right|\le\lVert x\rVert\lVert y\rVert$$
+\color{red}b) \color{black}Cho $x$ trong không gian định chuẩn $X$ sao cho $|f(x)|\le M$ với mọi phiếm hàm tuyến tính liên tục $f\in X'$ với $\lVert f\rVert_{X'}=1$. Chứng minh rằng $\lVert x\rVert\le M$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2019 - 2020}
+\begin{center}
+	\color{blue}(Ngày thi: 01/09/2020; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (2 điểm):}} \color{black}Cho $X:=C([0,1],\mathbb R)$ với chuẩn sup và dãy hàm: $$f_n(x)=\begin{cases}
+\begin{array}{ll}
+	2n^2x, & 0\le x\le\dfrac{1}{2n}\\\\
+	2n^2\left(\dfrac1n-x\right), & \dfrac{1}{2n}<x<\dfrac1n\\\\
+	0, & \dfrac1n\le x\le1
+\end{array}
+\end{cases}$$
+\color{red}a) \color{black}Giải thích vì sao $f_n\in X$ và $\{f_n\}_{n\ge1}$ hội tụ điểm trên $[0,1]$.\\\\
+\color{red}b) \color{black}Tính $\lVert f_n\rVert_X.$ Dãy $\{f_n\}_{n\ge1}$ có hội tụ trên $X$ không? Vì sao?\\\\
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}} \color{black}Cho $X:=C([0,1],\mathbb R)$ với chuẩn sup. Đặt ánh xạ: \begin{align*}
+	T:X&\rightarrow X\\
+	f&\mapsto Tf
+\end{align*} với $$T(f)(t)=f(t)+\displaystyle\int_0^tf(s)\text{d}s,~t\in[0,1]$$
+\color{red}a) \color{black}Giải thích vì sao $Tf\in X$ và kiểm tra $T$ là ánh xạ tuyến tính.\\\\
+\color{red}b) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Tính $\lVert T\rVert$.\\\\
+\color{red}d) \color{black}Chứng minh $T$ là một đơn ánh.\\\\
+\color{red}\underline{\textbf{Bài 3 (4 điểm):}} \color{black}Xét không gian tích trong $H=L^2([0,1])$ trên trường số thực. Tích trong trên $H$ được cho\\ bởi $$\langle u,v\rangle:=\displaystyle\int_0^1u(x)v(x)\text{d}x$$ Xét tập con $E=\{\varphi_1,\varphi_2\}$ của $H$ với: $$\varphi_1(t)=\mathbb I_{[0,\frac12)}(t)-\mathbb I_{\left[\frac12,1\right]}(t);~~~~\varphi_2(t)=\mathbb I_{[0,\frac14)}(t)-\mathbb I_{\left[\frac14,\frac12\right]}(t)$$
+$$\mathbb I_A(x)=\begin{cases}
+	1,~~x\in A\\
+	0,~~x\notin A
+\end{cases}$$
+\color{red}a) \color{black}Tính chuẩn của các phần tử trong $E$.\\\\
+\color{red}b) \color{black}Chứng minh $\varphi_1\perp\varphi_2$ và tìm một họ trực chuẩn $F$ sinh ra không gian tuyến tính $M$ sinh bởi $E$.\\\\
+\color{red}c) \color{black}Hãy tìm hình chiếu $P_Mf$ với $f(t)=t^2$.\\\\
+\color{red}d) \color{black}Chứng minh $\lVert P_Mu-P_Mv\rVert\le\lVert u-v\rVert$ với mọi $u,v\in H$.\\\\
+\color{red}\underline{\textbf{Bài 4 (2 điểm thưởng):}} \color{black}Cho $H$ là không gian Hilbert tách được và $\{e_n\}_{n\ge1}$ là một dãy trực chuẩn trên $H$.\\ Chứng minh rằng $\{e_n\}_{n\ge1}$ là một dãy trực chuẩn cực đại khi và chỉ khi với mọi $x\in H$ thì: $$\lVert x\rVert^2=\displaystyle\sum_{n=1}^\infty|\langle x,e_n\rangle|^2$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2020 - 2021}
+\begin{center}
+	\color{blue}(Ngày thi: 21/10/2021; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (3 điểm):}} \color{black}Cho $X:=C([-1,1],\mathbb R)$ với chuẩn sup. Đặt ánh xạ: \begin{align*}
+	T:X&\rightarrow\mathbb R\\
+	f&\mapsto Tf
+\end{align*} với $$Tf=\displaystyle\int_{-1}^0f(s)\text{d}s-\displaystyle\int_0^1f(s)\text{d}s$$
+\color{red}a) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính.\\\\
+\color{red}b) \color{black}Kiểm tra $T$ là ánh xạ liên tục.\\\\
+\color{red}c) \color{black}Hãy tính $\lVert T\rVert$ bằng cách sử dụng dãy hàm sau: $$f_n(t)=\begin{cases}
+\begin{array}{ll}
+	1, & -1\le t<-\dfrac1n\\\\
+	-nt, & -\dfrac1n\le t\le\dfrac1n\\\\
+	-1, & \dfrac1n<t\le 1
+\end{array}
+\end{cases}$$
+\color{red}\underline{\textbf{Bài 2 (3 điểm):}} \color{black}Xét không gian tích trong $H=L^2((-\infty,\infty))$ trên trường số thực. Tích trong trên $H$ được cho\\ bởi $$\langle u,v\rangle:=\displaystyle\int_{-\infty}^{+\infty} u(t)v(t)\text{d}t$$ Xét tập $E=\{\varphi_0,\varphi_1,\varphi_2\}$ với: $$\varphi_0(t)=e^{-\frac{t^2}{2}};~~~~\varphi_1(t)=te^{-\frac{t^2}{2}};~~~~\varphi_2(t)=t^2e^{-\frac{t^2}{2}}$$
+\color{red}a) \color{black}Tính chuẩn của các phần tử trong $E$, biết rằng $\displaystyle\int_{-\infty}^{+\infty} e^{-t^2}\text{d}t=\sqrt\pi$.\\\\
+\color{red}b) \color{black}Trực chuẩn hóa Gram - Schmidt các phần tử trong $E$ để thu được họ trực chuẩn $\{e_0,e_1,e_2\}$.\\\\
+\color{red}\underline{\textbf{Bài 3 (4 điểm):}} \color{black}Cho $H$ là một không gian Hilbert tách được và $\{e_n\}_{n\ge1}$ là một dãy trực chuẩn cực đại trên\\ $H$. Cho $T:H\rightarrow\mathbb R$ là một ánh xạ tuyến tính bị chặn trên $H$, tồn tại $M>0$ sao cho $|T(u)|\le M\lVert u\rVert_H$ với mọi $u\in H$. Đặt $w_k=T(e_k)$ với $k=1,2,\dots$\\\\
+\color{red}a) \color{black}Chứng minh rằng với mọi $m\in\mathbb N$ thì $$\displaystyle\sum_{k=1}^m|w_k|^2\le M^2,$$
+từ đó chứng minh $\{w_k\}_{k=1}^\infty\in\ell^2$ và $w=\displaystyle\sum_{k=1}^\infty w_ke_k\in H$.\\\\
+\color{red}b) \color{black}Chứng minh rằng $T(u)=\langle u,w\rangle_H$ với mọi $u\in H$ và $\lVert T\rVert=\lVert w\rVert_H$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2021 - 2022}
+\begin{center}
+	\color{blue}(Ngày thi: 01/07/2022; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (3 điểm):}} \color{black}Cho $$X:=\{f:[0,1]\rightarrow\mathbb R\text{ với $f$ liên tục từng khúc, liên tục phải tại mỗi $x\in[0,1]$ và liên tục tại 1}\}$$
+Ta định nghĩa: $$\lVert f\rVert_1:=\displaystyle\int_0^1|f(t)|\text{d}t,~f\in X$$
+\color{red}a) (1,5 điểm) \color{black}Kiểm tra $\lVert~\cdot~\rVert_1$ là một chuẩn trên $X$.\\\\
+\color{red}b) (1,5 điểm) \color{black}Cho dãy hàm $$f_n(x)=\begin{cases}
+\begin{array}{ll}
+	0, & 0\le x<\dfrac12-\dfrac1n\\\\
+	\dfrac n2x+\dfrac12-\dfrac n4, & \dfrac12-\dfrac1n\le x\le\dfrac12+\dfrac1n\\\\
+	1, & \dfrac12+\dfrac1n<x\le1
+\end{array}
+\end{cases}$$
+với $n$ là số nguyên dương. Kiểm tra dãy $\{f_n\}_{n\ge1}$ hội tụ về hàm $$f(x)=\begin{cases}
+\begin{array}{ll}
+	0, & 0\le x\le\dfrac12\\
+	1, & \dfrac12\le x\le1
+\end{array}
+\end{cases}$$
+theo chuẩn $\lVert~\cdot~\rVert_1$. Từ đó suy ra không gian các hàm số liên tục $C([0,1],\mathbb R)$ không đóng trong $(X,\lVert~\cdot~\rVert_1)$.\\\\
+\color{red}\underline{\textbf{Bài 2 (3 điểm):}} \color{black}Cho $q>2$. Đặt ánh xạ đồng nhất:\begin{align*}
+	I:\ell^2&\rightarrow\ell^q\\
+	x&\mapsto Ix=x
+\end{align*}
+\color{red}a) (1,5 điểm) \color{black}Kiểm tra $I$ là ánh xạ tuyến tính liên tục.\\\\
+\color{red}b) (1,5 điểm) \color{black}Tính chuẩn của ánh xạ $I$.\\\\
+\color{red}\underline{\textbf{Bài 3 (3 điểm):}} \color{black}Cho $H$ là một không gian Hilbert với tích trong $\langle\cdot,\cdot\rangle$ và $\{e_n\}_{n\ge1}$ là một dãy trực chuẩn trên $H$. Đặt $M=\text{span}(\{e_n\}_{n\ge1})$ là bao tuyến tính của dãy trực chuẩn $\{e_n\}_{n\ge1}$.\\\\
+\color{red}a) (1 điểm) \color{black}Chứng minh rằng với mọi $x\in H$ thì $x\in\overline M$ khi và chỉ khi $x=\displaystyle\sum_{k=1}^\infty\langle x,e_k\rangle e_k$.\\\\
+\color{red}b) (1 điểm) \color{black}Gọi $\{f_n\}_{n\ge1}$ là một dãy trực chuẩn trên $H$. Đặt $G=\text{span}(\{f_n\}_{n\ge1})$ là bao tuyến tính của dãy\\ trực chuẩn $\{f_n\}_{n\ge1}$. Chứng minh rằng $\overline M=\overline G$ khi và chỉ khi: $$e_n=\displaystyle\sum_{k=1}^\infty\langle e_n,f_k\rangle f_k~\text{ và }~f_n=\displaystyle\sum_{k=1}^\infty\langle f_n,e_k\rangle e_k$$
+\color{red}c) (1 điểm) \color{black}Cho $\{x_n\}_{n\ge1}$ là một dãy trong $H$. Chứng minh rằng $\displaystyle\sum_{k=1}^\infty\lVert x_k\rVert$ hội tụ, suy ra $\displaystyle\sum_{k=1}^\infty x_k$ hội tụ.\\\\
+\color{red}\underline{\textbf{Bài 4 (3 điểm):}} \color{black}Trong bài này, chúng ta sẽ đi chứng minh định lý Banach - Steinhaus.\\\\
+\color{red}a) (1 điểm) \color{black}Cho $T:(X,\lVert~\cdot~\rVert_X)\rightarrow(Y,\lVert~\cdot~\rVert_Y)$ là ánh xạ tuyến tính bị chặn. Chứng minh với $x,y\in X$ thì $$\max\{\lVert T(x+y)\rVert_Y,\lVert T(x-y)\rVert_Y\}\ge\lVert Ty\rVert_Y$$
+Chứng minh rằng với mỗi $x\in X$ và $r>0$ thì: $$\displaystyle\sup_{z\in B(x,r)}\lVert Tz\rVert_Y\ge r\lVert T\rVert$$
+Ở đây $B(x,r)=\{z\in X:\lVert z-x\rVert_X<r\}$.\\\\
+\color{red}b) (1 điểm thưởng) \color{black}Xét dãy ánh xạ tuyến tính bị chặn $T_n:(X,\lVert~\cdot~\rVert_X)\rightarrow(Y,\lVert~\cdot~\rVert_Y)$ với $n\in\mathbb Z^+$. Biết rằng $X$ là không gian Banach và $\lVert T_n\rVert\ge4^n$. Chứng minh rằng tồn tại dãy $\{x_n\}\subset X$ sao cho $x_0=0,~\lVert x_n-x_{n-1}\rVert\le3^{-n}$ và\\ $\lVert T_nx_n\rVert_Y\ge\frac233^{-n}\lVert T_n\rVert$.\\\\
+\color{red}c) (1 điểm thưởng) \color{black}Chứng minh dãy $\{x_n\}$ trong câu b hội tụ về $x\in X$ và $\{T_nx\}$ không bị chặn trong $Y$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Giải tích hàm, 2022 - 2023}
+\begin{center}
+	\color{blue}(Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Kiểm tra các ánh xạ sau là ánh xạ tuyến tính liên tục, và tính chuẩn của ánh xạ.\\\\
+\color{red}a) \color{black}\begin{align*}
+	T:\ell^2~&\rightarrow\mathbb R\\
+	x=(x_1,x_2,\dots,x_n,\dots)~&\mapsto Tx=-2x_1
+\end{align*}
+\color{red}b) \color{black}\begin{align*}
+	T:C([0,1],\mathbb R)~&\rightarrow\mathbb R\\
+	x~&\mapsto Tx=-3x\left(\dfrac12\right)
+\end{align*}
+\color{red}c) \color{black}\begin{align*}
+	T:C([0,1],\mathbb R)~&\rightarrow C([0,1],\mathbb R)\\
+	x~&\mapsto Tx
+\end{align*}
+với \begin{align*}
+	Tx:[0,1]~&\rightarrow\mathbb R\\
+	t~&\mapsto (Tx)(t)=\displaystyle\int_0^1sx(s)\text{d}s
+\end{align*}
+\color{red}\underline{\textbf{Bài 2 (2 điểm):}} \color{black}Cho $H$ là không gian tích trong và $x,y\in H$.\\\\
+\color{red}a) \color{black}Chứng minh rằng nếu $x\perp y$ thì $\lVert x+y\rVert=\lVert x-y\rVert$.\\\\
+\color{red}b) \color{black}Chứng minh rằng không gian trực giao của $H$, tức $x^\perp=\{y\in H~|~y\perp x\}$, là một không gian tuyến tính\\ con của $H$ và là một tập đóng.\\\\
+\color{red}\underline{\textbf{Bài 3 (1,5 điểm):}} \color{black}Cho ánh xạ:\begin{align*}
+	T:\ell^2~&\rightarrow\mathbb R\\
+	x=(x_1,x_2,\dots,x_n,\dots)~&\mapsto Tx=\displaystyle\sum_{n=1}^\infty\dfrac{x_n}{n^2}
+\end{align*}
+\color{red}a) \color{black}Kiểm tra ánh xạ $T$ được định nghĩa tốt, tức là $Tx$ được xác định.\\\\
+\color{red}b) \color{black}Tìm $y\in\ell^2$ sao cho với mọi $x\in\ell^2$ thì $Tx=\langle x,y\rangle_{\ell^2}$.\\\\
+\color{red}c) \color{black}Chứng tỏ $T$ là ánh xạ tuyến tính liên tục và tính chuẩn của $T$.\\\\
+\color{red}\underline{\textbf{Bài 4 (1,5 điểm):}} \color{black}Trong $\ell^2$, xét họ $E=(e_n)_{n\in\mathbb Z^+}$ các vector $e_n=(0,0,\dots,1,0,0,\dots),n\in\mathbb Z^+,$ với số 1 nằm ở\\ tọa độ thứ $n$ của $e_n$. Cho $$x=\left(1,\dfrac{1}{2^2},\dfrac{1}{3^2},\dots,\dfrac{1}{n^2},\dots\right)$$
+\color{red}a) \color{black}Kiểm tra $E$ là một họ trực chuẩn của $\ell^2$.\\\\
+\color{red}b) \color{black}Kiểm $x\in\ell^2$.\\\\
+\color{red}c) \color{black}Kiểm $x=\displaystyle\sum_{n=1}^\infty\langle x,e_n\rangle e_n$ (không trích dẫn các kết quả tổng quát hơn của không gian Hilbert).\\\\
+\color{red}d) \color{black}Giải thích vì sao $x$ không phải là một tổ hợp tuyến tính của hữu hạn phần tử trong $E$, nhưng là giới hạn\\ của một dãy các phần tử là tổ hợp tuyến tính của hữu hạn phần tử trong $E$.\\\\
+\color{red}\underline{\textbf{Bài 5 (1 điểm):}} \color{black}Trong không gian Hilbert $L^2([0,1],\mathbb R)$, cho $f_1(t)=1$ và $f_2(t)=t$.\\\\
+\color{red}a) \color{black}Tính $\lVert f_1\rVert,~\lVert f_2\rVert,~\langle f_1,f_2\rangle$.\\\\
+\color{red}b) \color{black}Tìm hình chiếu trực giao của $f_2$ lên $f_1$.\\\\
+\color{red}c) \color{black}Tìm một cơ sở trực chuẩn cho không gian tuyến tính con $E$ sinh bởi họ $(f_1,f_2)$. Nói cách khác, hãy trực\\ chuẩn hóa họ $(f_1,f_2)$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 26/06/2023; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Cho $X:=C([0,1],\mathbb R)$ với chuẩn sup. Đặt ánh xạ:\begin{align*}
+	T:X&\rightarrow X\\
+	f&\mapsto Tf
+\end{align*}
+với $$Tf(t)=\displaystyle\int_0^1(t-s)f(s)\text{d}s,~t\in[0,1]$$\\\\
+\color{red}a) \color{black}Kiểm tra $Tf\in X$ với mọi $f\in X$.\\\\
+\color{red}b) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Hãy tính $\lVert T\rVert$.\\\\
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}}\\\\
+\color{red}a) \color{black}Cho $X=\mathbb R^2$. Tìm $M^\perp$, biết $M=\{(a,b):a,b\in\mathbb R\}$.\\\\
+\color{red}b) \color{black}Cho $X=\mathbb R^n$ và $Y=\{x=(x_1,x_2,\dots,x_n):x_k=0,~\forall k\text{ chẵn}\}$. Chứng minh $Y$ là không gian con đóng\\ của $X$, và tìm $Y^\perp$.\\\\
+\color{red}c) \color{black}Xét không gian tích trong $H=C([-1,1],\mathbb R)$ là không gian các hàm số liên tục trên $[-1,1]$ với tích trong\\ của $H$ được cho bởi: $$\langle u,v\rangle:=\displaystyle\int_{-1}^1u(t)v(t)\text{d}t$$
+Xét tập con $E=\{1,t\}$ của $H$. Tìm họ trực chuẩn hóa của $E$ bằng kỹ thuật Gram - Schmidt.\\\\
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}}\\\\
+\color{red}a) \color{black}Cho $X$ là không gian con đóng của $\mathbb R^2$ và $f$ là phiếm hàm tuyến tính liên tục trên $X$. Chứng minh rằng \\ tồn tại phần tử $(a,b)\in\mathbb R^2$ sao cho $f(x,y)=ax+by$ với mọi $(x,y)\in X$.\\\\
+\color{red}b) \color{black}Gọi $g$ là ánh xạ tuyến tính liên tục trên $\mathbb R^2$ mở rộng Hahn - Banach của ánh xạ $f$ ở câu trên. Chứng minh\\ $g(x,y)=ax+by$ với mọi $(x,y)\in\mathbb R^2$.\\\\
+\color{red}c) \color{black}Cho $X=\{(x,3x)\in\mathbb R^2\}$ và ánh xạ $f:X\rightarrow\mathbb R$ thỏa $f(x,y)=x$. Tìm $(a,b)$ và $g$ minh họa cho các câu\\ bên trên.
+
+\newpage
+
+\subsection{Đề thi cuối học kì hè Giải tích hàm, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 30/08/2023; Thời gian: 120 phút; Lớp: 20TTH\_HE)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (3 điểm):}} \color{black}Cho $X=L^2([0,1])$ trên trường số thực và ánh xạ $T:X\to X$ xác định bởi: $$Tf(x)=x^3f(x)$$
+\color{red}a) \color{black}Giải thích vì sao $Tf\in X$?\\\\
+\color{red}b) \color{black}Chứng tỏ $T$ là một ánh xạ tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Cho dãy $f_n(x)=x^n$ với mọi $n\in\mathbb Z^+$. Chứng tỏ $f_n\in X$. Tính $\lVert f_n\rVert_2$ và $\lVert Tf_n\rVert_2$.\\\\
+\color{red}d) \color{black}Tính $\lVert T\rVert$.\\\\
+\color{red}\underline{\textbf{Bài 2 (3 điểm):}} \color{black}Cho $X$ là một không gian định chuẩn trên trường số thực và $M\subsetneq X$ là một không gian\\ con đóng trong $X$. Cho $a\in X~\backslash~M$ cố định, và đặt $d=\inf\{\lVert a-m\rVert:m\in M\}$.\\\\
+\color{red}a) \color{black}Chứng tỏ $d>0$.\\\\
+\color{red}b) \color{black}Cho ánh xạ $T:M+\langle a\rangle\to\mathbb R$ xác định bởi $T(m+ta)=td$ với mọi $m\in M$ và $t\in\mathbb R$. Chứng tỏ $T$ là\\ một phiếm hàm tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Chứng tỏ tồn tại $f\in X^*$ sao cho $f\langle a\rangle=1,~f\big|_M=0$ và $\lVert f\rVert\le\dfrac1d$.\\\\
+\color{red}\underline{\textbf{Bài 3 (4 điểm):}} \color{black}Cho không gian Hilbert $H=L^2([-2,2];\mathbb R)$ trên trường thực với tích trong trên $H$ cho bởi: $$\langle u,v\rangle=\displaystyle\int_{-2}^2u(x)v(x)\text{d}x$$
+Xét tập $E=\{1,x,x^2\}$ trong $H$.\\\\
+\color{red}a) \color{black}Trực chuẩn hóa Gram - Schmidt các phần tử trong $E$ để thu được họ trực chuẩn $\{e_1,e_2,e_3\}$.\\\\
+\color{red}b) \color{black}Tính: $$\displaystyle\min_{a,b,c\in\mathbb R}\displaystyle\int_{-2}^2\left|x^3-a-bx-cx^2\right|^2\text{d}x$$
+\color{red}c) \color{black}Gọi $M$ là không gian tuyến tính sinh bởi $E$, và cho ánh xạ $T:H\to M$ thỏa $x-Tx\in M^\perp$ với mọi $x\in H$. Chứng tỏ $M$ đóng trong $H$ và $$\lVert x-Tx\rVert=\inf\{\lVert x-m\rVert:m\in M\}$$
+với mọi $x\in H$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Giải tích hàm, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 24/06/2024; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black}Trong không gian các dãy số thực $\ell^2$ với chuẩn $\lVert~\cdot~\rVert_2$, cho ánh xạ: \begin{align*}
+	T:\ell^2&\to\ell^2\\
+	x&\mapsto Tx=\left(\dfrac{n}{3n+1}x_n\right)_{n\in\mathbb Z^+}
+\end{align*}
+với $x=(x_n)_{n\in\mathbb Z^+}\in\ell^2$.\\\\
+\color{red}a) \color{black}Chứng tỏ $T$ được định nghĩa tốt, tức là $Tx\in\ell^2$ với mọi $x\in\ell^2$.\\\\
+\color{red}b) \color{black}Kiểm tra $T$ là ánh xạ tuyến tính liên tục.\\\\
+\color{red}c) \color{black}Xét vector $e_k\in\ell^2,k\in\mathbb Z^+$ với số 1 ở vị trí thứ $k$ và số 0 ở những vị trí khác. Tính $\lVert Te_k\rVert_2$ và chứng tỏ: $$\lVert T\rVert=\frac13.$$
+\color{red}d) \color{black}Chứng tỏ không tồn tại vector $a\in\ell^2$ khác 0 sao cho $\lVert Ta\rVert_2=\lVert T\rVert\lVert a\rVert_2$.\\\\
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}}\\\\
+\color{red}a) \color{black}Cho $X=\mathbb R^n$ và $Y=\{x=(x_1,\ldots,x_n)\in\mathbb R^n:x_1=0\}$. Chứng minh $Y$ là không gian con đóng của $X$ và tìm $Y^\perp$.\\\\
+\color{red}b) \color{black}Xét không gian tích trong $H=C([0,2\pi],\mathbb R)$ là không gian các hàm số liên tục trên $[0,2\pi]$ với tích trong\\ được cho bởi: $$\langle u,v\rangle:=\int_0^{2\pi}u(t)v(t)\text{d}t$$
+Cho $F:=\{u_0,u_1,\ldots,u_n\}$ với $u_k(t)=\cos kt,k=\overline{0,n}$. Chứng minh $F$ là tập trực giao.\\\\
+\color{red}c) \color{black}Chứng minh $F$ ở câu trên là độc lập tuyến tính và tìm dãy trực chuẩn từ $F$.\\\\
+\color{red}d) \color{black}Tìm hình chiếu của hàm $f(t)=2024-t$ trên không gian tuyến tính sinh bởi 3 vector đầu tiên của $F$.\\\\
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}} \color{black}Cho $(X,\lVert~\cdot~\rVert)$ là một không gian định chuẩn và $x_0\ne0$ trong $X$. Đặt $M=\{tx_0:t\in\mathbb R\}$\\ và ánh xạ $g:M\to\mathbb R$ với $g(tx_0)=t\lVert x_0\rVert$.\\\\
+\color{red}a) \color{black}Chứng minh $g$ là ánh xạ tuyến tính liên tục trên $M$ và $\lVert g\rVert_{M^*}=1$.\\\\
+\color{red}b) \color{black}Cho $z\in X$ sao cho $|f(z)|\le 2024$ với mọi phiếm hàm tuyến tính liên tục $f\in X^*$ mà $\lVert f\rVert_{X^*}=1$. Chứng\\ minh rằng $\lVert z\rVert\le 2024$.
+\end{document}
