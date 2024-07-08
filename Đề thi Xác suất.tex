@@ -1,0 +1,364 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[paperheight=30cm,paperwidth=20cm,includehead,nomarginpar,textwidth=17cm,textheight=25cm,headheight=4mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{xcolor,amsmath,amssymb,amsfonts}
+\usepackage{wrapfig}
+\title{\color{red}\textbf{Tuyển tập đề thi Xác suất}}
+\author{\color{red}Lê Hoàng Bảo}
+\date{\color{red}30 tháng 01 năm 2024}
+\addto\captionsenglish{\renewcommand*\contentsname{Mục lục}}
+\begin{document}
+	% Set the page style to "fancy"...
+	\pagestyle{fancy}
+	%... then configure it.
+	\fancyhead{} % clear all header fields
+	\fancyhead[R]{\textbf{Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM\\Bộ môn Xác suất - Thống kê, Khoa Toán - Tin học}}
+	\fancyhead[L]{\color{red}\textbf{\LaTeX~by Lê Hoàng Bảo}}
+	\fancyfoot{} % clear all footer fields
+	\fancyfoot[C]{\color{blue}\textbf\thepage}
+	\fancyfoot[L]{\small XÁC SUẤT}
+	\fancyfoot[R]{Mã môn học: MTH00042}
+	\renewcommand{\headrulewidth}{0.6pt}
+	\renewcommand{\footrulewidth}{0.6pt}
+	\maketitle
+	\begin{center}
+		Tên cũ của môn học này: Lý thuyết độ đo và xác suất (MTH10401)
+	\end{center}
+	\newpage
+	\tableofcontents
+	\newpage
+\section{Đề thi giữa học kì}
+\subsection{Đề thi giữa học kì I Độ đo xác suất, 2016 - 2017}
+\begin{center}
+	\color{blue}(Ngày thi: 25/11/2016; Thời gian: 45 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (6 điểm):}} \color{black}Một phú ông nuôi hai loại bò (loại bò được phân biệt theo màu lông của bò: bò vàng và bò đen). Các con bò được nhốt trong ba chuồng khác nhau (chuồng I, II, III). Chuồng I gồm 25 bò vàng và 5 bò đen; chuồng II gồm 10 bò vàng và 20 bò đen; chuồng III gồm 10 bò vàng và 10 bò đen. Vào một đêm không trăng không sao, một tên trộm mù màu đã chọn ngẫu nhiên một chuồng rồi bắt hú họa một con bò.\\\\
+\color{red}a) \color{black}Tìm xác suất phú ông mất một con bò đen \textbf{và }ở chuồng I.\\\\
+\color{red}b) \color{black}Tìm xác suất con bò bị bắt đi là con bò đen.\\\\
+\color{red}c) \color{black}Biết rằng con bò bị bắt có màu vàng. Tìm xác suất phú ông mất bò ở chuồng I. Từ đó suy ra chuồng\\ nào có nguy cơ mất bò cao nhất? Tại sao?\\\\
+\color{red}\underline{\textbf{Câu 2 (4 điểm):}} \color{black}Hãy sử dụng \textbf{một trong hai định lí hội tụ của Lebesgue }để tính toán hoặc\\ chứng minh:\\\\
+\color{red}a) \color{black}Tính giới hạn $\displaystyle\lim_{n\rightarrow\infty}\displaystyle\int_0^\infty\left(1+\dfrac xn\right)^{-n}\left|\cos\dfrac xn\right|\text{d}x$.\\\\
+\color{red}b) \color{black}Cho hàm $f:\mathbb R\rightarrow\mathbb R$ đo được thỏa $sf(s)$ khả tích trên $\mathbb R$ và $F:\mathbb R\rightarrow\mathbb R$ với $F(x)=\displaystyle\int_{(-\infty,x]}\sin(s)f(s)\text{d}m(s)$ với $\forall x\in\mathbb R$. Chứng minh $F$ liên tục trên $\mathbb R$.
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Độ đo xác suất, 2016 - 2017}
+\begin{center}
+	\color{blue}(Ngày thi: 22/04/2017; Thời gian: 60 phút)\\
+	\underline{\textbf{ĐỀ 1}}
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (4,5 điểm):}} \color{black}Một nông trường có 3 đội sản xuất (đội 1, 2 và 3). Đội 1 sản xuất $\frac12$ tổng sản lượng (nông sản của nông trường); đội 2 sản xuất $\frac13$ tổng sản lượng và đội 3 sản xuất $\frac16$ tổng sản lượng. Nếu một sản phẩm được tạo ra đạt chuẩn của nông trường, người ta gọi nó là chính phẩm; ngược lại, nó được gọi là phế phẩm. Trong số các sản phẩm do đội 1 sản xuất, tỷ lệ phế phẩm $0.5\%$; tương tự, tỷ lệ phế phẩm tương ứng của đội 2 và 3 lần lượt là $0.8\%$ và $1\%$. Lấy ngẫu nhiên một sản phẩm trong kho của nông trường.\\\\
+\color{red}a) \color{black}Tìm xác suất để lấy phải một phế phẩm.\\\\
+\color{red}b) \color{black}Biết sản phẩm không phải do đội thứ 3 sản xuất. Tính xác suất sản phẩm chọn được là một chính phẩm.\\\\
+\color{red}c) \color{black}Biết sản phẩm chọn được là phế phẩm. Khi đó, khả năng phế phẩm đó do đội nào sản xuất là cao nhất?\\\\
+\color{red}\underline{\textbf{Câu 2 (4,5 điểm):}} \color{black}Cho các hàm $f(x)=\dfrac{\sin x}{\sqrt x}$ xác định trên $(0,\infty)$ và $g(x)=x^2e^{-x}$ xác định trên $\mathbb R$.\\\\
+\color{red}a) \color{black}Hàm $f+g$ có khả tích Lebesgue trên $(0,2)$ hay không? Hãy làm rõ nhận định.\\\\
+\color{red}b) \color{black}Hàm $g$ có khả tích Lebesgue trên $(-\infty, 1)$ hay không? Hãy làm rõ nhận định.\\\\
+\color{red}c) \color{black}Hàm $\dfrac{f(x)}{x^2}$ có khả tích Lebesgue trên $(0,2)$ hay không? Hãy làm rõ nhận định.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Hãy áp dụng một trong hai định lý hội tụ (cho tích phân Lebesgue) để tìm giới hạn sau: $$\displaystyle\lim_{n\rightarrow\infty}\displaystyle\int_0^n\left(1+\dfrac xn\right)^{-n}\cos\left(\dfrac{4x^2}{n^2}\right)\text{d}x$$
+\begin{center}
+	\color{blue}\underline{\textbf{ĐỀ 2}}
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (4,5 điểm):}} \color{black}Một nông trường có 3 đội sản xuất (đội 1, 2 và 3). Đội 1 sản xuất $\frac12$ tổng sản lượng (nông sản của nông trường); đội 2 sản xuất $\frac13$ tổng sản lượng và đội 3 sản xuất $\frac16$ tổng sản lượng. Nếu một sản phẩm được tạo ra đạt chuẩn của nông trường, người ta gọi nó là chính phẩm; ngược lại, nó được gọi là phế phẩm. Trong số các sản phẩm do đội 1 sản xuất, tỷ lệ phế phẩm $0.35\%$; tương tự, tỷ lệ phế phẩm tương ứng của đội 2 và 3 lần lượt là $0.6\%$ và $0.8\%$. Lấy ngẫu nhiên một sản phẩm trong kho của nông trường.\\\\
+\color{red}a) \color{black}Tìm xác suất để lấy phải một phế phẩm.\\\\
+\color{red}b) \color{black}Biết sản phẩm không phải do đội thứ 3 sản xuất. Tính xác suất sản phẩm chọn được là một chính phẩm.\\\\
+\color{red}c) \color{black}Biết sản phẩm chọn được là phế phẩm. Khi đó, khả năng phế phẩm đó do đội nào sản xuất là cao nhất?\\\\
+\color{red}\underline{\textbf{Câu 2 (4,5 điểm):}} \color{black}Cho các hàm $f(x)=\dfrac{\sin x}{\sqrt[4] x}$ xác định trên $(0,\infty)$ và $g(x)=x^2e^{-x}$ xác định trên $\mathbb R$.\\\\
+\color{red}a) \color{black}Hàm $f+g$ có khả tích Lebesgue trên $(0,2)$ hay không? Hãy làm rõ nhận định.\\\\
+\color{red}b) \color{black}Hàm $g$ có khả tích Lebesgue trên $(-\infty, 1)$ hay không? Hãy làm rõ nhận định.\\\\
+\color{red}c) \color{black}Hàm $\dfrac{f(x)}{x^2}$ có khả tích Lebesgue trên $(0,2)$ hay không? Hãy làm rõ nhận định.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Hãy áp dụng một trong hai định lý hội tụ (cho tích phân Lebesgue) để tìm giới hạn sau: $$\displaystyle\lim_{n\rightarrow\infty}\displaystyle\int_0^n\left(1+\dfrac x{2n}\right)^{-2n}\cos\left(\dfrac{4x^2+3}{n^2+n}\right)\text{d}x$$
+\newpage
+
+\subsection{Đề thi giữa học kì I Độ đo xác suất, 2017 - 2018}
+\begin{center}
+	\color{blue}(Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (5 điểm):}} \color{black}Một công ty bảo hiểm phân loại khách hàng theo 3 mức rủi ro: thấp, trung bình và cao. Công ty có được số lượng khách hàng trong diện rơi vào rủi ro thấp, trung bình, cao lần lượt là $30\%,50\%,20\%$. Tỷ lệ người rủi ro thấp bị tai nạn là 0,05; người rủi ro trung bình bị tai nạn là 0,1.\\\\
+\color{red}a) (2,5 điểm) \color{black}Biết tỉ lệ khách hàng bị tai nạn là $12,5\%$. Hỏi tỉ lệ người rủi ro cao bị tai nạn là bao nhiêu?\\\\
+\color{red}b) (2,5 điểm) \color{black}Với tỉ lệ có được ở câu a, nếu một khách hàng của công ty bị tai nạn thì xác suất để\\ người đó ở trong nhóm rủi ro cao là bao nhiêu?\\\\
+\color{red}\underline{\textbf{Câu 2 (2,5 điểm):}} \color{black}Sử dụng tính chất "$f:\mathbb R\rightarrow\mathbb R$ đo được Borel trên $\mathbb R$ khi và chỉ khi $f^{-1}((a,+\infty))$ là\\ tập Borel với mọi $a\in\mathbb R$" để chứng tỏ hàm $f(x)=x^2$ đo được.\\\\
+\color{red}\underline{\textbf{Câu 3 (2,5 điểm):}} \color{black}Cho hàm đơn $s:\mathbb R\rightarrow\mathbb R$ thỏa $$s(x)=\begin{cases}
+	2,~~x\in(0,2)\\
+	3,~~x\in(-3,-1)\\
+	0,~~x\notin(-3,-1)\cup(0,2)
+\end{cases}$$
+\color{red}a) \color{black}Vẽ đồ thị của hàm $y=s(x)$.\\\\
+\color{red}b) \color{black}Viết $s(x)$ thành dạng tổng thông qua các hàm đặc trưng.\\\\
+\color{red}c) \color{black}Tính $\displaystyle\int_{(-2,1)}s(x)\text{d}m(x)$.\\\\
+
+\newpage
+
+\subsection{Đề thi giữa học kì I Độ đo xác suất, 2018 - 2019}
+\begin{center}
+	\color{blue}(Ngày thi: 31/10/2018; Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (4 điểm):}} \color{black}Một cửa hàng bán bóng đèn T nhập bóng đèn từ 3 nhà cung cấp A, B, C. Hàng năm, nhà máy A cung cấp 3800 bóng, B cung cấp 3200 bóng và C cung cấp 3000 bóng. Biết tỉ lệ bóng đèn không đạt yêu cầu của ba nhà máy A, B, C lần lượt là 0.007, 0.01 và 0.012.\\\\
+\color{red}a) (1,5 điểm) \color{black}Tính tỉ lệ bóng đèn không đạt yêu cầu tại nhà máy T.\\\\
+\color{red}b) (1,5 điểm) \color{black}Tính xác suất bóng đèn được đến từ nhà máy B, biết rằng bóng đèn này không đạt yêu cầu.\\\\
+\color{red}c) (1 điểm) \color{black}Nếu bóng đèn không đạt yêu cầu, xác suất để bóng đèn này đến từ nhà máy nào là cao nhất?\\\\
+\color{red}\underline{\textbf{Câu 2 (5 điểm):}} \color{black}Cho $f,g:\mathbb R\rightarrow\mathbb R$ với $f(x)=e^{-x}$ và $g(x)=\mathbb I_{(0,2)}(x)$.\\\\
+\color{red}a) (2 điểm) \color{black}Xác định $f^{-1}((a,\infty))$ với mọi $a$. Từ đó suy ra tính đo được của $f$.\\\\
+\color{red}b) (2 điểm) \color{black}Chứng minh rằng $f$ và $g$ là các hàm khả tích Lebesgue trên $(0,\infty)$.\\\\
+\color{red}c) (1 điểm) \color{black}Tính $\displaystyle\int_{\mathbb R}fg\text{d}m$ với $m$ là độ đo Lebesgue.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Viết code R:\\\\
+\color{red}a) \color{black}Mô phỏng thí nghiệm tung đồng xu 24000 lần.\\\\
+\color{red}b) \color{black}Xuất ra kết quả cho biết tỉ lệ xuất hiện của từng mặt.
+
+\newpage
+
+\subsection{Đề thi giữa học kì I Độ đo xác suất, 2019 - 2020}
+\begin{center}
+	\color{blue}(Ngày thi: 31/10/2019; Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (4 điểm):}} \color{black}Một cửa hàng bán tivi T nhập tivi từ 3 nhà cung cấp A, B, C. Hàng năm, nhà máy A cung cấp 4000 tivi, B cung cấp 3000 tivi và C cung cấp 3000 tivi. Biết tỉ lệ tivi đạt yêu cầu của ba nhà máy A, B, C lần lượt là 0.992, 0.99 và 0.988.\\\\
+\color{red}a) (1,5 điểm) \color{black}Tính tỉ lệ tivi không đạt yêu cầu tại nhà máy T.\\\\
+\color{red}b) (1,5 điểm) \color{black}Tính xác suất tivi được đến từ nhà máy B, biết rằng tivi này không đạt yêu cầu.\\\\
+\color{red}c) (1 điểm) \color{black}Nếu tivi không đạt yêu cầu, xác suất để tivi này đến từ nhà máy nào là cao nhất?\\\\
+\color{red}\underline{\textbf{Câu 2 (5 điểm):}} \color{black}Cho $f,g:\mathbb R\rightarrow\mathbb R$ với $f(x)=1-x^2$ và $g(x)=\mathbb I_{(-2,2)}(x)$.\\\\
+\color{red}a) (2 điểm) \color{black}Xác định $f^{-1}((a,\infty))$ với mọi $a$. Từ đó suy ra tính đo được của $f$.\\\\
+\color{red}b) (1,5 điểm) \color{black}Chứng minh rằng $h(x)$ khả tích Lebesgue trên $\mathbb R$, biết rằng $h(x)=f(x)g(x)$.\\\\
+\color{red}c) (1 điểm) \color{black}Tính $\displaystyle\int_{\mathbb R}h(x)\text{d}m(x)$ với $m$ là độ đo Lebesgue.\\\\
+\color{red}d) (0,5 điểm) \color{black}Chứng tỏ hàm $F(\lambda)=\displaystyle\int_{\mathbb R}e^{-\lambda x^2}h(x)\text{d}m(x)$ liên tục với mọi $\lambda>0$.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Viết code R:\\\\
+\color{red}a) \color{black}Mô phỏng thí nghiệm tung đồng xu 24000 lần.\\\\
+\color{red}b) \color{black}Xuất ra kết quả cho biết tỉ lệ xuất hiện của từng mặt.
+
+\newpage
+
+\subsection{Đề thi giữa học kì I Độ đo xác suất, 2020 - 2021}
+\begin{center}
+	\color{blue}(Ngày thi: 07/12/2020; Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (4 điểm):}} \color{black}Một cửa hàng máy tính T nhập máy tính từ 3 nhà cung cấp A, B, C. Hàng năm, nhà máy A cung cấp 5000 máy tính, B cung cấp 3000 máy tính và C cung cấp 2000 máy tính. Biết tỉ lệ máy tính đạt yêu cầu của ba nhà máy A, B, C lần lượt là 0.99, 0.95 và 0.93.\\\\
+\color{red}a) (1,5 điểm) \color{black}Tính tỉ lệ máy tính không đạt yêu cầu tại nhà máy T.\\\\
+\color{red}b) (1,5 điểm) \color{black}Tính xác suất máy tính được đến từ nhà máy B, biết rằng máy tính này không đạt yêu cầu.\\\\
+\color{red}c) (1 điểm) \color{black}Nếu máy tính không đạt yêu cầu, xác suất để máy tính này đến từ nhà máy nào là cao nhất?\\\\
+\color{red}\underline{\textbf{Câu 2 (5 điểm):}} \color{black}Cho $f,g:\mathbb R\rightarrow\mathbb R$ với $f(x)=9-x^2$ và $g(x)=\mathbb I_{(-3,3)}(x)$.\\\\
+\color{red}a) (2 điểm) \color{black}Xác định $f^{-1}((a,\infty))$ với mọi $a$. Từ đó suy ra tính đo được của $f$.\\\\
+\color{red}b) (1,5 điểm) \color{black}Chứng minh rằng $h(x)$ khả tích Lebesgue trên $\mathbb R$, biết rằng $h(x)=f(x)g(x)$.\\\\
+\color{red}c) (1 điểm) \color{black}Tính $\displaystyle\int_{\mathbb R}h(x)\text{d}m(x)$ với $m$ là độ đo Lebesgue.\\\\
+\color{red}d) (0,5 điểm) \color{black}Chứng tỏ hàm $F(\lambda)=\displaystyle\int_{\mathbb R}e^{-\lambda x^2}h(x)\text{d}m(x)$ liên tục với mọi $\lambda>0$.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Viết code R:\\\\
+\color{red}a) \color{black}Mô phỏng thí nghiệm tung đồng xu 24000 lần.\\\\
+\color{red}b) \color{black}Xuất ra kết quả cho biết tỉ lệ xuất hiện của từng mặt.
+
+\newpage
+
+\subsection{Đề thi giữa học kì I Độ đo xác suất, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 01/11/2022; Thời gian: 60 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (2 điểm):}} \color{black}Trong một trường đại học, có $53\%$ sinh viên là nữ, $5.5\%$ sinh viên học chuyên ngành Khoa học máy tính và $2\%$ sinh viên là nữ học chuyên ngành khoa học máy tính. Chọn ngẫu nhiên một sinh viên. Tính xác suất để:\\\\
+\color{red}a) \color{black}Sinh viên được chọn là nữ, biết rằng sinh viên này học chuyên ngành khoa học máy tính.\\\\
+\color{red}b) \color{black}Sinh viên này học chuyên ngành khoa học máy tính, biết rằng sinh viên này là nữ.\\\\
+\color{red}\underline{\textbf{Câu 2 (2 điểm):}} \color{black}Cho không gian xác suất $(\Omega,\mathcal M,\mathbb P)$. Chứng minh rằng nếu $A,B\in\mathcal M$ là các biến cố độc lập thì các cặp biến cố $A^c,B$ và $A^c,B^c$ cũng độc lập.\\\\
+\color{red}\underline{\textbf{Câu 3 (2 điểm):}} \color{black}Cho không gian đo $(\Omega,\mathcal M,\mathbb P)$. Cho $f,g:\Omega\rightarrow\mathbb R$ là các hàm đo được.\\\\
+\color{red}a) \color{black}Chứng minh rằng $f^{-1}((3,4))\cap g^{-1}((2,5))$ là tập đo được trên $\Omega$.\\\\
+\color{red}b) \color{black}Cho $x\in f^{-1}((3,4))\cap g^{-1}((2,5))$. Chứng minh rằng $6<f(x)g(x)<20$.\\\\
+\color{red}\underline{\textbf{Câu 4 (2 điểm):}} \color{black}Cho độ đo $\varphi$ xác định trên $(\mathbb R,\mathcal B(\mathbb R))$ với $\varphi(A)=\displaystyle\int_A\dfrac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}\text{d}m(t)$ với $\forall A\in\mathcal B(\mathbb R)$. Tính gần đúng $$\displaystyle\int_{(-1,1)}t^2\text{d}\varphi(t)$$
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}\\\\
+\color{red}a) \color{black}Khối lượng một gói rau bán tại một siêu thị rau sạch là biến ngẫu nhiên có phân phối chuẩn với trung bình 550g và độ lệch chuẩn 20g. Trong một ngày có 2000 gói rau được bán. Ước lượng số gói rau có trọng lượng lớn hơn 580g.\\\\
+\color{red}b) \color{black}Tại một siêu thị gần đó, $16\%$ gói rau được bán có trọng lượng ít nhất là 590g và $11\%$ gói rau được bán có trọng lượng nhỏ hơn 540g. Giả sử trọng lượng gói rau $M$ của siêu thị này tuân theo phân phối chuẩn. Tìm trung bình và độ lệch chuẩn của $M.$
+
+\newpage
+
+\subsection{Đề thi giữa học kì I Xác suất + Độ đo xác suất, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 27/11/2023; Thời gian: 60 phút; \textbf{Lớp: 22KDL1 + các lớp 22TTH})
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (2 điểm):}} \color{black}Tất cả những người tham gia khóa học "bỏ hút thuốc" mà vẫn không hút thuốc trong suốt khoảng thời gian một năm sau được mời dự tiệc liên hoan. Trong số nữ tham gia khóa học, có 49\% được mời và trong số nam tham gia khóa học có 38\% được mời. Nếu 63\% số người tham gia lớp học ban đầu là nam, tính:\\\\
+\color{red}a) \color{black}Tỷ lệ phần trăm của lớp học ban đầu tham gia bữa tiệc.\\\\
+\color{red}b) \color{black}Tỷ lệ phần trăm những người tham dự bữa tiệc là nữ.\\\\
+\color{red}\underline{\textbf{Câu 2 (2 điểm):}} \color{black}Cho không gian xác suất $(\Omega,\mathcal M,\mathbb P)$ và $A_1,\dots,A_n$ là các biến cố. Giả sử $\mathbb P(A_1\cap\ldots\cap A_{n-1})>0$. Chứng minh: $$\mathbb P(A_1\cap\ldots\cap A_n)=\mathbb P(A_1)\mathbb P(A_2|A_1)\ldots\mathbb P(A_n|A_1\cap\ldots\cap A_{n-1})$$
+\color{red}\underline{\textbf{Câu 3 (2 điểm):}} \color{black}Một hợp chứa 6 quả bóng trắng và 9 quả bóng đen. Lần lượt lấy ra, không hoàn lại, 4 quả bóng. Tính xác suất để được 2 quả đầu là trắng và 2 quả sau là đen.\\\\
+\color{red}\underline{\textbf{Câu 4 (2 điểm):}} \color{black}Cho $F(x)=\displaystyle\int_{-\infty}^xf(t)\text{d}t$. Tìm (gần đúng) độ đo Radon-Nikodym $\mu_F([-2,4])$, biết: $$f(x)=\begin{cases}
+\begin{array}{ll}
+	\dfrac12x^2e^{-x}, & x>0\\\\
+	0, & x\le0
+\end{array}
+\end{cases}$$
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Theo các nghiên cứu khoa học, chỉ có 0.01\% trứng cá hồi có thể phát triển thành một con cá trưởng thành. Giả sử việc trưởng thành của các con cá hồi là độc lập lẫn nhau. Trong một trang trại, người ta thả 50~000 trứng. Hỏi có bao nhiêu khả năng thu được ít nhất ba con cá trưởng thành?
+
+\newpage
+
+\section{Đề thi cuối học kì}
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2011 - 2012}
+\begin{center}
+	\color{blue}(Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1:}} \color{black}Cho $(\Omega,\mathcal M,\mu)$ là một không gian đo được sao cho $\mu(\Omega)<\infty$. Cho $\{f_n\}$ là một dãy hàm số thực khả tích trên $\Omega$ và một hàm số thực $f$ trên $\Omega$. Giả sử: $$\forall\varepsilon>0,~\exists N(\varepsilon)\in\mathbb N:|f_n(x)-f(x)|<\varepsilon~~~~~~\forall x\in\Omega,~\forall n>N(\varepsilon)$$
+Hỏi từng kết luận sau có đúng không?\\\\
+\color{red}i) \color{black}$f$ đo được trên $\Omega$.\\\\
+\color{red}ii) \color{black}$f$ khả tích trên $\Omega$ và $\displaystyle\lim_{n\rightarrow\infty}\displaystyle\int_\Omega f_n\text{d}\mu=\displaystyle\int_\Omega f\text{d}\mu$.\\\\
+\color{red}\underline{\textbf{Câu 2:}} \color{black}Cho $X$ là một biến ngẫu nhiên trên một không gian xác suất $(\Omega,\mathcal M,P)$. Giả sử $X$ có phân phối\\ chuẩn tắc $\mathcal N(0,1)$. Tính $$\displaystyle\int_\Omega X^3\text{d}P$$\\\\
+\color{red}\underline{\textbf{Câu 3:}} \color{black}Cho $X$ là một biến ngẫu nhiên trên một không gian xác suất $(\Omega,\mathcal M,P)$. Đặt $$g(s)=\mathbb P(X^{-1}((-\infty,s])),~~~~~\forall s\in\mathbb R$$
+Hỏi $g$ có giới hạn trái hay không tại mọi $s$ trong $\mathbb R$?\\\\
+\color{red}\underline{\textbf{Câu 4:}} \color{black}Với mọi số nguyên $k$, cho dãy số thực $\{a_{k,n}\}$. Giả sử $|a_{k,n}|\le2^{-n}$ với mọi số nguyên $k$ và $n$, và\\ dãy $\{a_{k,n}\}$ hội tụ về một số thực $a_n$ với mọi số thực $n$ khi $k\rightarrow\infty$. Hỏi từng kết luận sau có đúng không?\\\\
+\color{red}i) \color{black}$\displaystyle\sum_{n=1}^\infty a_{k,n}$ hội tụ với mọi số nguyên $k$.\\\\
+\color{red}ii) \color{black}$\displaystyle\sum_{n=1}^\infty a_n$ hội tụ, và $\displaystyle\lim_{k\rightarrow\infty}\displaystyle\sum_{n=1}^\infty a_{k,n}=\displaystyle\sum_{n=1}^\infty a_n$.\\\\
+\color{red}\underline{\textbf{Câu 5:}} \color{black}Cho $(\Omega,\mathcal M,\mu)$ là một không gian đo được, $\{f_n\}$ là một dãy hàm số thực khả tích trên $\Omega$ và một hàm số thực $g$ khả tích trên $\Omega$. Giả sử $g(x)\le f_n(x)$ với mọi $x$ trong $\Omega$. Hỏi mệnh đề sau đúng hay sai? $$\displaystyle\int_\Omega\displaystyle\liminf_{n\rightarrow\infty}f_n\text{d}\mu=\displaystyle\liminf_{n\rightarrow\infty}\displaystyle\int_\Omega f_n\text{d}\mu$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2014 - 2015}
+\begin{center}
+	\color{blue}(Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (2 điểm):}} \color{black}Cho $X\sim\mathcal N\left(\mu_X,\sigma_X^2\right)$ và $Y\sim\mathcal N\left(\mu_Y,\sigma_Y^2\right)$ là hai biến ngẫu nhiên có phân phối chuẩn. Cho biết hàm sinh moment của $X$ là $M_X(t)=\mathbb E\left(e^{tX}\right)=\text{exp}\left(\mu_Xt+\frac{\sigma_X^2t^2}{2}\right)$\\\\
+\color{red}a) \color{black}Sử dụng hàm sinh moment để chứng minh rằng nếu $X,Y$ độc lập thì $\alpha X+\beta Y~(\alpha,\beta\in\mathbb R)$ cũng có phân phối chuẩn. Tìm phân phối của $3X-2Y$.\\\\
+\color{red}b) \color{black}Biến ngẫu nhiên $V$ được gọi là có phân phối log-normal $\left(\mu,\sigma^2\right)$ nếu $\ln V\sim\mathcal N\left(\mu,\sigma^2\right)$. Tìm $\mathbb E(V)$ và $\text{Var}(V)$.\\\\
+\color{red}\underline{\textbf{Câu 2 (3 điểm):}} \color{black}Cho $X$ có phân phối đều trên $(0,1)$ với $f_X(x)=\mathbb I_{(0,1)}(x)$, và $\lambda\in\mathbb R$.\\\\
+\color{red}a) \color{black}Tính $F(\lambda)=\mathbb E\left(\dfrac{\sin\lambda X}{X}\right)$ theo tích phân trên $(0,1)$.\\\\
+\color{red}b) \color{black}Chứng minh $F(\lambda)$ liên tục theo $\lambda$.\\\\
+\color{red}c) \color{black}Chứng minh $F(\lambda)$ có đạo hàm, và tính đạo hàm của nó.\\\\
+\color{red}\underline{\textbf{Câu 3 (2 điểm):}} \color{black}Cho $I(p,q)=\displaystyle\int_0^1\dfrac{x^{p-1}}{1+x^q}\text{d}x~(p>0,q\ge0)$.\\\\
+\color{red}a) \color{black}Tính $I(p,q)$ dưới dạng chuỗi.\\\\
+\color{red}b) \color{black}Áp dụng $I(1,2)$ để tính $\dfrac\pi4$ dưới dạng chuỗi.\\\\
+\color{red}\underline{\textbf{Câu 4 (3 điểm):}} \color{black}Giả sử lãi suất năm thứ $i$ của tiền đầu tư là biến ngẫu nhiên $r_i\ge0~(i=1,2,\dots,n)$. Khi đầu tư $\$1$, số tiền tích lũy được sau $n$ năm sẽ là $AV_n=(1+r_1)\dots(1+r_n)~\$$. Giả sử $\ln(1+r_i)$ là các biến ngẫu nhiên độc lập có cùng phân phối có kỳ vọng $\bar r$ và phương sai $\sigma^2$.\\\\
+\color{red}a) \color{black}Tính $\mathbb E(\ln AV_n)$ và $\text{Var}(\ln AV_n)$ theo $\bar r$ và $\sigma^2$.\\\\
+\color{red}b) \color{black}Với $r_i=0.05,~r_i=0.08,~r_i=0.1$ thì xác suất lần lượt là 0.2, 0.4 và 0.4. Tìm $\bar r$ và $\sigma^2$ của $\ln(1+r_i)$.\\\\
+\color{red}c) \color{black}Dùng định lý giới hạn trung tâm, tính xác suất của biến cố: Số tiền tích lũy sau 20 năm nhỏ hơn $\$5$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2015 - 2016}
+\begin{center}
+	\color{blue}(Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (3 điểm):}} \color{black}Cho $X\sim\mathcal N\left(\mu_X,\sigma_X^2\right)$ và $Y\sim\mathcal N\left(\mu_Y,\sigma_Y^2\right)$ là hai biến ngẫu nhiên có phân phối chuẩn. Cho biết hàm sinh moment của $X$ là $M_X(t)=\mathbb E\left(e^{tX}\right)=\text{exp}\left(\mu_Xt+\frac{\sigma_X^2t^2}{2}\right)$\\\\
+\color{red}a) \color{black}Sử dụng hàm sinh moment để tìm phân phối của $\alpha X$ với $\alpha\in\mathbb R$.\\\\
+\color{red}b) \color{black}Chứng minh rằng nếu $X,Y$ độc lập thì $\alpha X+\beta Y~(\alpha,\beta\in\mathbb R)$ cũng có phân phối chuẩn. Tìm phân phối của $X-4Y$.\\\\
+\color{red}c) \color{black}Cho $Z\sim\mathcal N(0,1)$. Đặt $I_k=\mathbb E\left(X^{2k}\right)$. Tìm hệ thức liên hệ giữa $I_k$ và $I_{k-1}$.\\\\
+\color{red}\underline{\textbf{Câu 2 (4 điểm):}} \color{black}Cho $X$ có phân phối đều trên $(0,2)$ với $f_X(x)=c\mathbb I_{(0,2)}(x)$, và $\lambda\in\mathbb R$.\\\\
+\color{red}a) \color{black}Tìm $c$.\\\\
+\color{red}b) \color{black}Tính $F(\lambda)=\mathbb E\left(\dfrac{\sin\lambda X}{X}\right)$ theo tích phân Riemann trên $(0,2)$.\\\\
+\color{red}c) \color{black}Chọn $M>0$, chứng minh rằng $F(\lambda)$ liên tục theo $\lambda$ trên khoảng $[-M,M]$.\\\\
+\color{red}d) \color{black}Chứng minh $F(\lambda)$ có đạo hàm, và tính đạo hàm của nó.\\\\
+\color{red}\underline{\textbf{Câu 3 (3 điểm):}} \color{black}Giả sử lãi suất năm thứ $i$ của tiền đầu tư là biến ngẫu nhiên $r_i\ge0~(i=1,2,\dots,n)$. Khi đầu tư $\$1$, số tiền tích lũy được sau $n$ năm sẽ là $AV_n=(1+r_1)\dots(1+r_n)~\$$. Giả sử $\ln(1+r_i)$ là các biến ngẫu nhiên độc lập có cùng phân phối có kỳ vọng $\bar r$ và phương sai $\sigma^2$.\\\\
+\color{red}a) \color{black}Tính $\mathbb E(\ln AV_n)$ và $\text{Var}(\ln AV_n)$ theo $\bar r$ và $\sigma^2$.\\\\
+\color{red}b) \color{black}Với $r_i=0.06,~r_i=0.08,~r_i=0.1$ thì xác suất lần lượt là 0.3, 0.3 và 0.4. Tìm $\bar r$ và $\sigma^2$ của $\ln(1+r_i)$.\\\\
+\color{red}c) \color{black}Xét biến cố $(AV_{30}\le\alpha):$ số tiền tích lũy sau 30 năm nhỏ hơn $\alpha\$$. Dùng định lý giới hạn trung tâm,\\ tìm gần đúng $\alpha$ nhỏ nhất sao cho $\mathbb P(AV_{30}\le\alpha)\ge90\%$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2016 - 2017}
+\begin{center}
+	\color{blue}(Ngày thi: 21/01/2017; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (1,5 điểm):}} \color{black}Chứng minh rằng hàm $f(x)=x\left(\sin^5x+2^x\right)$:\\\\
+\color{red}a) \color{black}Khả tích Lebesgue trên $(0,1)$.\\\\
+\color{red}b) \color{black}Không khả tích Lebesgue trên $(1,\infty)$.\\\\
+\color{red}\underline{\textbf{Câu 2 (1 điểm):}} \color{black}Cho $f:\mathbb R\rightarrow\mathbb R$ khả tích. Chứng minh $G(\lambda)=\displaystyle\int_{-\infty}^\infty\sin\lambda xf(x)\text{d}x$ liên tục trên $\mathbb R$.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Cho biến ngẫu nhiên $X\sim\mathcal N(0,1)$. Tìm hàm mật độ của biến ngẫu nhiên log-normal $Y=e^X$.\\\\
+\color{red}\underline{\textbf{Câu 4 (1 điểm):}} \color{black}Một nhà nông chở 850 bắp cải đi bán. Giả sử trọng lượng bắp cải có cùng phân phối chuẩn với kỳ vọng 1,1kg và độ lệch chuẩn 150g. Ước lượng xem có bao nhiêu bắp cải có trọng lượng >1,3kg.\\\\
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Cho biến ngẫu nhiên nhị thức $X\sim B(n,p)$ với $\mathbb P(X=k)=C_k^np^k(1-p)^{n-k}~(0\le k\le n)$. Tìm hàm sinh moment $M_X(t)$, từ đây tính $\mathbb E(X),\text{Var}(X)$. Chứng minh rằng nếu $X\sim B(n,p),~Y\sim B(m,p)$ và $X,Y$ độc lập thì $X+Y\sim B(n+m,p)$.\\\\
+\color{red}\underline{\textbf{Câu 6 (1,5 điểm):}} \color{black}Một công ty bảo hiểm định giá bảo hiểm lốc xoáy sử dụng các giả thiết sau:\\\\
+$\bullet$~Mỗi năm có nhiều nhất một cơn lốc xoáy.\\\\
+$\bullet$~Xác suất của mỗi cơn lốc xoáy là 0,04.\\\\
+$\bullet$~Số lốc xoáy hàng năm độc lập với nhau.\\\\
+Tính xác suất để có ít hơn 4 lốc xoáy trong 30 năm.\\\\
+\color{red}\underline{\textbf{Câu 7 (1,5 điểm):}} \color{black}Giả sử biến ngẫu nhiên $X$ có phân phối đều Uniform$(a,b)$ với $a,b$ chưa biết. Cho biết các quan trắc độc lập của $X$ là các biến ngẫu nhiên độc lập $X_1,X_2,\dots,X_n$ có cùng phân phối với $X$. Dùng luật số lớn, hãy cho biết công thức tính gần đúng $a,b$ từ $X_1,X_2,\dots,X_n$.\\\\
+\color{red}\underline{\textbf{Câu 8 (0,5 điểm):}} \color{black}Dùng định lý hội tụ bị chặn, chứng minh rằng hàm $$\Gamma(\lambda)=\displaystyle\int_0^\infty t^{\lambda-1}e^{-t}\text{d}t$$ có đạo hàm tại mọi $\lambda>0$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2018 - 2019}
+\begin{center}
+	\color{blue}(Ngày thi: 03/01/2019; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (1 điểm):}} \color{black}Chọn 1 trong 2 câu sau:\\\\
+\color{red}a) \color{black}Hàm số $f(x)=\dfrac{e^{-x}}{x^2}$ có khả tích Lebesgue trên $(0,\infty)$ không?\\\\
+\color{red}b) \color{black}Cho $G(\lambda)=\displaystyle\int_0^1e^{-\lambda t}g(t)\text{d}t$ với $g:[0,1]\rightarrow\mathbb R$ là hàm khả tích. Hỏi $G$ có liên tục trên $(0,\infty)$ không?\\\\
+\color{red}\underline{\textbf{Câu 2 (3 điểm):}} \color{black}Cho $f(x)=Cx(2-x)\mathbb I_{(0,2)}(x)$.\\\\
+\color{red}a) (1 điểm) \color{black}Tìm $C$ để $f$ là hàm mật độ xác suất.\\\\
+\color{red}b) (1 điểm) \color{black}Gọi $X$ là biến ngẫu nhiên có hàm mật độ $f(x)$. Tính $\mathbb E(X)$ và $\text{Var}(X)$.\\\\
+\color{red}c) (1 điểm) \color{black}Cho $Y=2X+3$. Tìm hàm mật độ xác suất của $Y$.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Một kỳ thi trắc nghiệm môn Thống kê có 50 câu. Một sinh viên loại Khá có thể trả lời đúng một câu trắc nghiệm với xác suất là 0,65. Tính xác suất để sinh viên này không rớt (đúng tối thiểu 25 câu).\\\\
+\color{red}\underline{\textbf{Câu 4 (3 điểm):}} \color{black}Cho biến ngẫu nhiên Poisson $X\sim P(\lambda_1)$, độc lập với $Y\sim P(\lambda_2)$.\\\\
+\color{red}a) (1 điểm) \color{black}Tìm hàm sinh moment của $X$ và $Y$, tức $M_X(t)$ và $M_Y(t)$.\\\\
+\color{red}b) (1 điểm) \color{black}Chứng minh rằng $M_{X+Y}(t)=M_X(t).M_Y(t)$.\\\\
+\color{red}c) (1 điểm) \color{black}Từ đó suy ra $X+Y$ cũng có phân phối Poisson và $X+Y\sim P(\lambda_1+\lambda_2)$.\\\\
+\color{red}\underline{\textbf{Câu 5 (1 điểm):}} \color{black}Các kỹ sư cho rằng trọng lượng $W$ (tấn) mà một nhịp cầu có thể chịu đựng và không làm hỏng cấu trúc cầu thỏa phân phối chuẩn với trung bình 400 và độ lệch chuẩn 40. Giả sử trọng lượng một chiếc xe (tấn) là biến ngẫu nhiên với trung bình 3 và độ lệch chuẩn 0,3. Giả thiết các biến ngẫu nhiên này độc lập. Ước lượng số xe tối đa trên một nhịp cầu sao cho xác suất làm hỏng cấu trúc cầu không quá 0,05.\\\\
+\color{red}\underline{\textbf{Câu 6 (1 điểm):}} \color{black}Viết code R:\\\\
+\color{red}a) (1 điểm) \color{black}mô phỏng một mẫu ngẫu nhiên 2000 phần tử có phân phối đều $U([160,180])$.\\\\
+\color{red}b) (1 điểm) \color{black}xuất ra biểu đồ histogram cho mẫu vừa tạo được.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2019 - 2020}
+\begin{center}
+	\color{blue}(Ngày thi: 28/12/2019; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (1,5 điểm):}}\\\\
+\color{red}a) \color{black}Chứng minh hàm $f(x)=\dfrac{\sin x}{x}$ khả tích Lebesgue trên $(0,1)$.\\\\
+\color{red}b) \color{black}Chứng minh hàm $f(x)=\dfrac2x$ không khả tích trên $(1,\infty)$.\\\\
+\color{red}\underline{\textbf{Câu 2 (1 điểm):}} \color{black}Cho $f:\mathbb R\rightarrow\mathbb R$ khả tích. Chứng minh $G(\lambda)=\displaystyle\int_{-\infty}^\infty f(x)\sin\lambda x\text{d}x$ liên tục trên $\mathbb R$.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Cho $X$ có hàm mật độ $f_X(x)=ke^{-\beta x}$ với $x\ge0,~\beta>0$ và $f_X(x)=0$ với $x<0$.\\ Tìm $k$ theo $\beta$. Khi đó $X$ gọi là có phân phối mũ với tham số $\beta$, ký hiệu $X\sim\text{Exp}(\beta)$.\\\\
+\color{red}\underline{\textbf{Câu 4 (1 điểm):}} \color{black}Điểm số kỳ thi tuân theo phân phối chuẩn với kỳ vọng 60 và độ lệch chuẩn 15. Giả sử thang điểm là 100 và có 500~000 thí sinh. Hỏi có khoảng bao nhiêu thí sinh có điểm dưới 55?\\\\
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Cho biến ngẫu nhiên $X\sim\text{Exp}(\beta),~\beta>0$. Tìm hàm sinh moment $M_X(t)$, từ đây tính $\mathbb E(X)$ và $\text{Var}(X)$. Cho biết nếu $W$ có phân phối Gamma$(\alpha,\beta)$ thì $M_W(t)=\left(\dfrac{\beta}{\beta-t}\right)^\alpha$. Chứng minh rằng nếu $X,Y\sim\text{Exp}(\beta),~\beta>0$, và $X,Y$ độc lập thì $X+Y\sim\text{Gamma}(2,\beta)$.\\\\
+\color{red}\underline{\textbf{Câu 6 (1,5 điểm):}} \color{black}Một nhà máy sản xuất linh kiện điện tử cho biết tỉ lệ phế phẩm của nhà máy là $0,03\%$. Nhà máy sản xuất 20~000 linh kiện. Tìm xác suất để nhà máy có không quá 50 linh kiện hỏng.\\\\
+\color{red}\underline{\textbf{Câu 7 (2 điểm):}} \color{black}Các kỹ sư cho rằng trọng lượng $M$ (tấn) mà một chiếc phà chuyên chở container có thể chịu đựng (không bị chìm) thỏa phân phối chuẩn với trung bình 200 và độ lệch chuẩn 40. Giả sử trọng lượng một container (tấn) là biến ngẫu nhiên với trung bình 2,16 và độ lệch chuẩn 0,25. Giả thiết các biến ngẫu nhiên này độc lập. Ước lượng số container tối đa mà chuyến phà được phép chở sao cho xác suất chìm phà không quá 0,05.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2020 - 2021}
+\begin{center}
+	\color{blue}(Ngày thi: 26/01/2021; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (1,5 điểm):}} \color{black}Chứng minh rằng hàm $f(x)=\dfrac{1}{(1+x)\sqrt x}$:\\\\
+\color{red}a) \color{black}Khả tích Lebesgue trên $(0,1)$.\\\\
+\color{red}b) \color{black}Khả tích Lebesgue trên $(1,\infty)$.\\\\
+\color{red}\underline{\textbf{Câu 2 (1 điểm):}} \color{black}Cho $f:\mathbb R\rightarrow\mathbb R$ khả tích. Chứng minh $G(\lambda)=\displaystyle\int_{-\infty}^\infty f(x)e^{-\lambda|x|^3}\text{d}x$ liên tục trên $(0,\infty)$.\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Cho $X$ có hàm mật độ $f_X(x)=ke^{-x}$ với $x\ge0$ và $f_X(x)=0$ với $x<0$. Tìm $k$, từ\\ đó tìm hàm mật độ của $-3X$.\\\\
+\color{red}\underline{\textbf{Câu 4 (1 điểm):}} \color{black}Điểm số kỳ thi tuân theo phân phối chuẩn với kỳ vọng 65 và độ lệch chuẩn 10. Giả sử thang điểm là 100 và có 500~000 thí sinh. Hỏi có khoảng bao nhiêu thí sinh có điểm dưới 55?\\\\
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Cho biến ngẫu nhiên hình học $X\sim\text{Geometric}(p)$ với $\mathbb P(X=k)=p(1-p)^k~(k=0,1,2,\dots)$ và $0<p<1$. Tìm hàm sinh moment $M_X(t)$, từ dó tính $\mathbb E(X)$ và $\text{Var}(X)$.\\\\
+\color{red}\underline{\textbf{Câu 6 (1,5 điểm):}} \color{black}Một nhà máy sản xuất linh kiện điện tử cho biết tỉ lệ phế phẩm của nhà máy là $0,03\%$. Nhà máy sản xuất 20~000 linh kiện. Tìm xác suất để nhà máy có không quá 6 linh kiện hỏng.\\\\
+\color{red}\underline{\textbf{Câu 7 (2 điểm):}} \color{black}Cho các biến ngẫu nhiên $X\sim\mathcal N(\mu,\sigma^2),~Y\sim\mathcal N(\nu,\rho^2)$ với $X,Y$ độc lập và $Z=2X+3Y$. Giả sử $\mu,\sigma,\nu,\rho$ chưa biết. Cho biết các quan trắc độc lập của $Z$ là các biến ngẫu nhiên độc lập $Z_1,\dots,Z_n$ có cùng phân phối với $Z$ và các quan trắc độc lập của $Y$ là các biến ngẫu nhiên độc lập $Y_1,\dots,Y_n$ có cùng phân phối với $Y$.\\\\
+\color{red}a) \color{black}Tìm phân phối của $Z$.\\\\
+\color{red}b) \color{black}Dùng luật số lớn, cho biết công thức tính gần đúng $\mu,\sigma$ từ $X_1,\dots,X_n$ và $Y_1,\dots,Y_n$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2021 - 2022}
+\begin{center}
+	\color{blue}(Ngày thi: 14/01/2022; Thời gian: 90 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (1,5 điểm):}} \color{black}Cho hàm $f(x)=\dfrac{2}{3+x}$. Hàm $f$ có khả tích trên $(0,2)$ không? Có khả tích trên $(2,\infty)$ không?\\\\
+\color{red}\underline{\textbf{Câu 2 (1,5 điểm):}} \color{black}Cho $f:\mathbb R\rightarrow\mathbb R$ khả tích. Hỏi $G(\lambda)=\displaystyle\int_{\mathbb R}f(x)e^{-(\lambda+1)|x|}\text{d}m(x)$ liên tục trên tập hợp nào của $\lambda$?\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Điểm số kỳ thi tuân theo phân phối chuẩn với kỳ vọng 60 và độ lệch chuẩn 9. Giả sử thang điểm là 100 và có 400~000 thí sinh dự thi. Hỏi có khoảng bao nhiêu thí sinh có điểm dưới 70?\\\\
+\color{red}\underline{\textbf{Câu 4 (2 điểm):}} \color{black}Cho hai biến ngẫu nhiên $X,Y$ độc lập với $X\sim\text{Binomial}\left(200~000,10^{-5}\right)$ và\\ $Y\sim\text{Binomial}\left(300~000,10^{-5}\right)$. Đặt $Z=X+Y$. Tính gần đúng $\mathbb P(Z=20)$.\\\\
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Một nhà máy sản xuất linh kiện điện tử cho biết tỉ lệ phế phẩm của nhà máy là $0,03\%$. Nhà máy sản xuất 200~000 linh kiện. Giả sử quá trình sản xuất mỗi linh kiện độc lập với nhau. Tìm xác suất để nhà máy có không quá 100 linh kiện hỏng.\\\\
+\color{red}\underline{\textbf{Câu 6 (2 điểm):}} \color{black}Cho $(X_i)$ i.i.d và $X_i\sim\mathcal N(2,4)$. Tính: $$\displaystyle\lim_{n\rightarrow\infty}\dfrac{X_1+\ldots+X_{2n}}{X_1^2+\ldots+X_{3n}^2}$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Độ đo xác suất, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 30/12/2022; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (1 điểm):}} \color{black}Cho $Y$ là biến ngẫu nhiên log-normal $(\mu,\sigma^2)$, tức là $Y=e^X$ với $X\sim\mathcal N(\mu,\sigma^2)$. Sử dụng hàm sinh moment của biến ngẫu nhiên có phân phối chuẩn, hãy tính $\mathbb{E}(Y^s)~(s>0)$. Từ đó suy ra $\mathbb{E}(Y)$ và $\text{Var}(Y).$\\\\
+\color{red}\underline{\textbf{Câu 2 (2 điểm):}} \color{black}Một xí nghiệp sản xuất túi đựng rác chứa được 50 pounds rác (1 pound = 0,453592 kg). Xí nghiệp cải tiến máy móc và sản xuất ra một loại túi rác mới. Xí nghiệp muốn biết túi rác mới có thể chịu tải $>$ 50 pound hay không. Để trả lời câu hỏi này, xí nghiệp chọn ra 40 túi mới và gọi $X_i$ (pound) là khối lượng rác tối đa của túi thứ $i$ đựng được. Giả sử $X_1,\dots,X_{40}$ i.i.d và $X_i\sim\mathcal N(\mu;~1,65^2)$ với $\mu$ (pound) là khối lượng trung bình mà loại túi rác mới chịu được.\\\\
+\color{red}a) \color{black}Tìm phân phối của $\overline{X}=\dfrac{1}{40}\displaystyle\sum_{j=1}^{40}X_j$.\\\\
+\color{red}b) \color{black}Cho biết một giá trị trung bình $\overline{X}$ đo được là $\overline{x}_{obs}=50,575$. Với mức tin cậy 0.95, trong hai giả thuyết $\mu=50$ và $\mu>50$, giả thuyết nào phù hợp với số liệu quan trắc trên?\\\\
+\color{red}\underline{\textbf{Câu 3 (1 điểm):}} \color{black}Điểm số của thí sinh trong một kỳ thi tuân theo phân phối chuẩn với trung bình 55 và phương sai 25. Giả sử thang điểm là 100 và có 400~000 thí sinh dự thi. Ước lượng số thí sinh có điểm trên 65.\\\\
+\color{red}\underline{\textbf{Câu 4 (2 điểm):}} \color{black}Cho hai biến ngẫu nhiên $X,Y$ độc lập, trong đó $X\sim\text{Binomial}(200~000,10^{-5})$ và\\ $Y\sim\text{Binomial}(300~000,10^{-5})$. Đặt $Z=X+Y$. Tính gần đúng $\mathbb{P}(Z=10)$.\\\\
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Một nhà máy sản xuất linh kiện điện tử cho biết tỉ lệ phế phẩm của nhà máy là $0,03\%$. Nhà máy sản xuất 200~000 linh kiện. Giả sử quá trình sản xuất mỗi linh kiện độc lập với nhau. Tìm xác suất để nhà máy có không quá 70 linh kiện hỏng.\\\\
+\color{red}\underline{\textbf{Câu 6 (1 điểm):}} \color{black}Cho $(X_i)$ i.i.d và $X_i\sim\mathcal N(-3,4)$. Tính: $$\displaystyle\lim_{n\rightarrow\infty}\dfrac{X_1+\ldots+X_{2n}}{X_1^2+\ldots+X_{3n}^2}$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì I Xác suất + Độ đo xác suất, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 30/01/2024; Thời gian: 120 phút; \textbf{Lớp: 22KDL1 + các lớp 22TTH})
+\end{center}
+\color{red}\underline{\textbf{Câu 1 (2 điểm):}} \color{black}Cho $X$ là biến ngẫu nhiên liên tục có hàm mật độ $f_X(x)$. Tìm hàm mật độ của $Y=X^2$ theo $f_X$. Áp dụng: Với $X\sim\mathcal N(0,1)$, tìm hàm mật độ của $Y=X^2$.\\\\
+\color{red}\underline{\textbf{Câu 2 (2 điểm):}} \color{black}Cho $X_1,\dots,X_n$ độc lập và có cùng phân phối Pois$(\lambda)$. Tìm phân phối của $Y_n=X_1+\ldots+X_n$. Tính xác suất $\mathbb P(Y_3\le2)$ theo $\lambda$.\\\\
+\color{red}\underline{\textbf{Câu 3 (2 điểm):}}\\\\
+a) \color{black}Giả sử xúc xắc I là một xúc xắc cân đối. Đặt $X$ là số chấm thu được khi tung xúc xắc I. Tính $\mathbb E(X)$.\\\\
+\color{red}b) \color{black}Giả sử ta tung thêm xúc xắc II một cách độc lập. Gọi $Y$ là số chấm trên xúc xắc II. Chứng minh: $$\mathbb E(X+Y|Y)=Y+\dfrac72$$
+\color{red}\underline{\textbf{Câu 4 (2 điểm):}} \color{black}Một nhà máy sản xuất linh kiện điện tử cho biết tỉ lệ phế phẩm của nhà máy là $0,02\%$. Nhà máy sản xuất 200~000 linh kiện. Giả sử quá trình sản xuất mỗi linh kiện độc lập với nhau. Tìm xác suất để nhà máy có không quá 100 linh kiện hỏng.\\\\
+\color{red}\underline{\textbf{Câu 5 (2 điểm):}} \color{black}Cho $(X_i)$ i.i.d và $X_i\sim\mathcal N(-3,4)$. Tính: $$\displaystyle\lim_{n\rightarrow\infty}\dfrac1n\displaystyle\sum_{k=1}^{3n}(X_k+1)^2$$
+\end{document}

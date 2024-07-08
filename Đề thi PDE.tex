@@ -1,0 +1,137 @@
+\documentclass[10.5pt, a4paper]{article}
+\usepackage[paperheight=30cm,paperwidth=20cm,includehead,nomarginpar,textwidth=17cm,textheight=25cm,headheight=4mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{xcolor,amsmath,amssymb,amsfonts}
+\usepackage[most]{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\DeclareMathOperator*{\argmin}{arg\,min\,}
+\title{\color{red}\textbf{Các đề thi Phương trình đạo hàm riêng}}
+\author{\color{red}Lê Hoàng Bảo}
+\date{\color{red}\today}
+\begin{document}
+	% Set the page style to "fancy"...
+	\pagestyle{fancy}
+	%... then configure it.
+	\fancyhead{} % clear all header fields
+	\fancyhead[R]{\textbf{Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM\\Bộ môn Giải tích, Khoa Toán - Tin học}}
+	\fancyhead[L]{\color{red}\textbf{\LaTeX~by Lê Hoàng Bảo}}
+	\fancyfoot{} % clear all footer fields
+	\fancyfoot[C]{\textbf\thepage}
+	\fancyfoot[L]{\small PHƯƠNG TRÌNH ĐẠO HÀM RIÊNG}
+	\fancyfoot[R]{Mã môn học: MTH10414}
+	\renewcommand{\headrulewidth}{0.6pt}
+	\renewcommand{\footrulewidth}{0.6pt}
+	\maketitle
+	\newpage
+	\section{Đề thi}
+	\subsection{Đề thi cuối học kì II Phương trình đạo hàm riêng, 2017 - 2018}
+	\begin{center}
+		\color{blue}(Ngày thi: 12/06/2018; Thời gian: 120 phút)
+	\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho $a,b>0,~\Omega=[0,a]\times[0,b],~S_1=[0,a]\times\{0\},~S_2=\{0\}\times[0,b],~S_3=\partial\Omega~\backslash~(S_1\cup S_2)$ và $f\in L^2(\Omega)$. Xét phương trình: $$Lu\equiv-\dfrac{\partial}{\partial x}\left((2+x)\dfrac{\partial u}{\partial x}\right)-\dfrac{\partial}{\partial y}\left((2+y)\dfrac{\partial u}{\partial y}\right)=f(x,y),~~(x,y)\in\Omega$$
+với điều kiện biên $u=0$ trên $S_2$ và $\dfrac{\partial u}{\partial n}=0$ trên $S_1\cup S_3$.\\\\
+\color{red}a) \color{black}Tìm dạng nghiệm yếu của bài toán trên không gian nghiệm $V$ cần xác định.\\\\
+\color{red}b) \color{black}Sử dụng đẳng thức $$u^2(x,y)=2\displaystyle\int_0^x\dfrac{\partial u}{\partial x}(s,y)u(s,y)\text{d}s$$ và KHÔNG sử dụng bất đẳng thức Poincaré, chứng minh rằng tồn tại $C>0$ sao cho: $$\left\lVert\dfrac{\partial u}{\partial x}\right\rVert_{L^2}^2+\left\lVert\dfrac{\partial u}{\partial y}\right\rVert_{L^2}^2\ge C\lVert u\rVert_{H^1}^2$$
+với mọi $u\in V$.\\\\
+\color{red}c) \color{black}Chứng minh bài toán có nghiệm trên $V$ bằng định lý Lax - Milgram.\\\\
+\color{red}d) \color{black}Giả sử nghiệm của bài toán yếu thỏa $u\in V\cap H^2(\Omega)$. Chứng tỏ nghiệm $u$ này thỏa bài toán ban đầu.\\\\
+\color{red}e) \color{black}Viết phiếm hàm $J:V\rightarrow\mathbb R$ thỏa mãn $u=\displaystyle\argmin_{w\in V}J(w)$.\\\\
+\text{~~~}Nếu thay $V$ bằng $H^1(\Omega)$ thì điểm cực tiểu của $J$ thỏa bài toán biên nào?\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Cho toán tử $L$ xác định trên $\Omega$ như ở Bài 1. Xét phương trình $u_t+Lu=0$ với điều kiện đầu $u(x,0)=g(x)$ và điều kiện biên $u\big|_{\partial\Omega}=0.$\\\\
+\color{red}a) \color{black}Xác định $D(L)\subset L^2(\Omega)$.\\\\
+\color{red}b) \color{black}KHÔNG sử dụng bất đẳng thức Poincaré, chứng minh rằng tồn tại $C>0$ sao cho: $$\left\lVert\dfrac{\partial u}{\partial x}\right\rVert_{L^2}^2+\left\lVert\dfrac{\partial u}{\partial y}\right\rVert_{L^2}^2\ge C\lVert u\rVert_{H^1}^2$$
+với mọi $u\in H_0^1(\Omega)$.\\\\
+\color{red}c) \color{black}Chứng minh rằng toán tử $L$ đơn điệu cực đại trên $L^2(\Omega)$.\\\\
+\color{red}d) \color{black}Chứng minh rằng toán tử $L$ đối xứng, từ đó suy ra $L$ tự liên hợp.\\\\
+\color{red}e) \color{black}Bằng định lý Hille - Yoshida, chứng minh rằng nếu $g\in L^2(\Omega)$ thì bài toán có nghiệm: $$u\in C\big([0,\infty),L^2(\Omega)\big)~\cap~ C\big([0,\infty),D(L)\big)~\cap~ C^1\big([0,\infty),L^2(\Omega)\big)$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Phương trình đạo hàm riêng, 2021 - 2022}
+\begin{center}
+	\color{blue}(Ngày thi: 18/06/2022; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho $a,b>0,~\Omega=[0,a]\times[0,b]$ và $f\in L^2(\Omega)$. Xét phương trình: $$Lu\equiv-\dfrac{\partial}{\partial x}\left((2+\cos^2x)\dfrac{\partial u}{\partial x}\right)-\dfrac{\partial^2u}{\partial y^2}=f(x,y),~(x,y)\in\Omega$$
+với điều kiện biên $u=0$ trên $\partial\Omega$.\\\\
+\color{red}a) \color{black}Tìm dạng nghiệm yếu của bài toán trên không gian nghiệm $V=H_0^1(\Omega)$.\\\\
+\color{red}b) \color{black}Cho biết $$\left\lVert\dfrac{\partial u}{\partial x}\right\rVert_{L^2}^2+\left\lVert\dfrac{\partial u}{\partial y}\right\rVert_{L^2}^2\ge C\lVert u\rVert_{H^1}^2$$ với mọi $u\in V$. Chứng minh bài toán có nghiệm trên $V$ bằng định lý Lax - Milgram.\\\\
+\color{red}c) \color{black}Giả sử nghiệm của bài toán yếu thỏa $u\in V\cap H^2(\Omega)$. Chứng tỏ nghiệm $u$ này thỏa bài toán ban đầu.\\\\
+\color{red}d) \color{black}Tìm toán tử $J[u]$ và tập $A$ để nghiệm $u$ của câu a thỏa $u=\displaystyle\argmin_{u\in A}J[u]$.\\\\
+\color{red}e) \color{black}Nếu $A=H^1(\Omega)$, tìm $u_{tt}-Lu=0,~\nabla J[u]$ và tập xác định của nó, từ đó suy ra bài toán biên của\\ điểm cực tiểu của $J[u]$.\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Cho $\Omega\subset\mathbb R^2$ là một miền thuộc lớp $C^2$ và $L$ như ở Bài 1. Xét phương trình $u_{tt}-Lu=0$ với điều kiện đầu $u(x,0)=u_0(x),u_t(x,0)=v_0(x)$ và điều kiện biên $u(x,t)\big|_{\partial\Omega}=0$. Giả sử: $$u_0\in H^2(\Omega)\cap H_0^1(\Omega),~v_0\in H_0^1(\Omega)$$
+Chứng minh bài toán tồn tại duy nhất nghiệm thỏa: $$u\in C\big([0,\infty); H^2(\Omega)\cap H_0^1(\Omega)\big)~\cap~C^1\big([0,\infty); H_0^1(\Omega)\big)~\cap~C^2\big([0,\infty); L^2(\Omega)\big)$$
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Phương trình đạo hàm riêng, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 27/04/2023; Thời gian: 60 phút)
+\end{center}
+Cho phương trình $u_{xx}+u_{yy}=0$ trên miền $x,y>0$ với các điều kiện biên $u(0,y)=0,~u(x,0)=f(x)$, trong đó $f\in L^1(0,\infty)\cap C([0,\infty))$ và $\displaystyle\lim_{x\rightarrow\infty}u(x,y)=\displaystyle\lim_{x\rightarrow\infty}u_x(x,y)=0$.\\\\
+\color{red}\underline{\textbf{Bài 1 (4 điểm):}} \color{black} Chứng minh rằng: $$u(x,y)=\dfrac2\pi\displaystyle\int_0^\infty\displaystyle\int_0^\infty e^{-\lambda y}f(\zeta)\sin\lambda x\sin\lambda\zeta\text{d}\zeta\text{d}\lambda$$
+\color{red}\underline{\textbf{Bài 2 (4 điểm):}} \color{black} Chứng minh rằng: $$u(x,y)=\dfrac y\pi\displaystyle\int_0^\infty\left(\dfrac{1}{y^2+(\zeta-x)^2}-\dfrac{1}{y^2+(\zeta+x)^2}\right)f(\zeta)\text{d}\zeta$$
+\color{red}\underline{\textbf{Bài 3 (2 điểm):}} \color{black} Chứng minh rằng: $$\displaystyle\lim_{y\rightarrow0^+}u(x,y)=f(x)$$
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Phương trình đạo hàm riêng, 2022 - 2023}
+\begin{center}
+	\color{blue}(Ngày thi: 06/07/2023; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho $a,b,\alpha_0,\alpha_1>0,~\Omega=[0,a]\times[0,b]$ và $f\in L^2(\Omega)$. Đặt $S_1=[0,a]\times\{0\},~S_2=\partial\Omega~\backslash~S_1$ và $$Lu=-\dfrac{\partial}{\partial x}\left((\alpha_0+x^2+y^2)\dfrac{\partial u}{\partial x}\right)-\dfrac{\partial}{\partial y}\left((\alpha_1+x^2+y^2)\dfrac{\partial u}{\partial y}\right)$$
+Xét bài toán biên: $$Lu=f~\text{với điều kiện biên}~u\big|_{S_1}=0,~\dfrac{\partial u}{\partial\text{n}}\bigg|_{S_2}=0$$
+\color{red}a) \color{black}Tìm không gian nghiệm $V$ và viết dạng nghiệm yếu của bài toán.\\\\
+\color{red}b) \color{black}Cho $v\in H^1(\Omega),~v\big|_{S_1}=0$. Sử dụng đẳng thức $$v(x,y)=\displaystyle\int_0^y\dfrac{\partial v}{\partial y}(x,s)\text{d}s$$ để chứng minh rằng tồn tại số $C_0>0$ không phụ thuộc vào $v$ sao cho $\lVert v\rVert_{L^2}\le C_0\lVert\nabla v\rVert_{L^2}$. Từ đó suy ra $$\lVert v\rVert_{H^1}\le C_0\lVert\nabla v\rVert_{L^2}.$$
+\color{red}c) \color{black}Chứng minh bài toán biên có nghiệm duy nhất $u\in V$.\\\\
+\color{red}d) \color{black}Tìm $J[v]$ với $v\in V$ thỏa $u=\displaystyle\argmin_VJ[v]$.\\\\
+\color{red}e) \color{black}Nếu $w=\displaystyle\argmin_{H^1(\Omega)}J[w]$ và $w\in H^2(\Omega)$ thì $w$ thỏa bài toán biên nào?\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Cho $\Omega=(0,1),~T>0$ và $f\in L^2\big(\Omega\times(0,T)\big)$. Xét phương trình $u_t-u_{xx}=f$ với điều\\ kiện biên $u(0,t)=u(1,t)=0$ và điều kiện đầu $u(x,0)=g(x),~0<x<1$.\\\\
+\color{red}a) \color{black}Tìm $D(L)$ với $Lu=-u_{xx}$.\\\\
+\color{red}b) \color{black}Chứng minh $L$ đơn điệu, cực đại trên $L^2(\Omega)$.\\\\
+\color{red}c) \color{black}Chứng minh $L$ tự liên hợp.\\\\
+\color{red}d) \color{black}Giả sử $f\equiv0,~g\in L^2(\Omega)$. Chứng minh bài toán có nghiệm $u$ bằng định lý Hille - Yoshida.\\\\
+\color{red}e) \color{black}Tìm công thức của nửa nhóm $S(t)$ để nghiệm $u$ của câu d thỏa mãn $u(x,t)=S(t)g$. Sử dụng công thức này để viết công thức nghiệm trong trường hợp $f$ khác 0.
+
+\newpage
+
+\subsection{Đề thi giữa học kì II Phương trình đạo hàm riêng, 2023 - 2024}
+\begin{center}
+	\color{blue}\underline{\textbf{ĐỀ THI KÍP 1 (31-05-2024), THỜI GIAN: 30 PHÚT}}
+\end{center}
+Xét bài toán gồm phương trình $-u''+u=f$ với $f\in L^2(0,\pi)$ và điều kiện đầu $u(0)=u(\pi)=0$.\\\\
+\color{red}a) \color{black}Viết dạng nghiệm yếu của bài toán.\\\\
+\color{red}b) \color{black}Chứng minh rằng dạng nghiệm yếu tồn tại nghiệm bằng định lý Lax - Milgram.\\\\
+\color{red}c) \color{black}Chứng minh rằng nghiệm của bài toán yếu cũng là nghiệm của bài toán ban đầu.\\\\
+\color{red}d) \color{black}Xấp xỉ nghiệm $u\approx c_1\phi_1+c_2\phi_2$ với $f(x)=x$ và $\phi_1(x)=1,~\phi_2(x)=x$.
+\begin{center}
+	\color{blue}\underline{\textbf{ĐỀ THI KÍP 2 (07-06-2024), THỜI GIAN: 30 PHÚT}}
+\end{center}
+Xét bài toán gồm phương trình $-u''+3u=f$ với $f\in L^2(0,1)$ và điều kiện đầu $u(0)=u'(1)=0$.\\\\
+\color{red}a) \color{black}Viết dạng nghiệm yếu của bài toán.\\\\
+\color{red}b) \color{black}Chứng minh rằng dạng nghiệm yếu tồn tại nghiệm bằng định lý Lax - Milgram.\\\\
+\color{red}c) \color{black}Chứng minh rằng nghiệm của bài toán yếu cũng là nghiệm của bài toán ban đầu.\\\\
+\color{red}d) \color{black}Xấp xỉ nghiệm $u\approx \alpha_1\phi_1+\alpha_2\phi_2$ với $f(x)=x$ và $\phi_1(x)=x^2-2x,~\phi_2(x)=x^3-3x$.
+
+\newpage
+
+\subsection{Đề thi cuối học kì II Phương trình đạo hàm riêng, 2023 - 2024}
+\begin{center}
+	\color{blue}(Ngày thi: 04/07/2024; Thời gian: 120 phút)
+\end{center}
+\color{red}\underline{\textbf{Bài 1 (5 điểm):}} \color{black}Cho $a,b>0,~\Omega=[0,a]\times[0,b]$ và $f\in L^2(\Omega)$. Đặt $S_1=[0,a]\times\{0\},~S_2=\partial\Omega~\backslash~S_1$ và $$Lu=-\dfrac{\partial}{\partial x}\left(e^{x^2+y^2}\dfrac{\partial u}{\partial x}\right)-\dfrac{\partial}{\partial y}\left(e^{x^2+y^2}\dfrac{\partial u}{\partial y}\right)$$
+Xét bài toán biên: $$Lu=f~\text{với điều kiện biên}~u\big|_{S_1}=0,~\dfrac{\partial u}{\partial\text{n}}\bigg|_{S_2}=0$$
+\color{red}a) \color{black}Tìm không gian nghiệm $V$ và viết dạng nghiệm yếu của bài toán.\\\\
+\color{red}b) \color{black}Cho $v\in H^1(\Omega),~v\big|_{S_1}=0$. Sử dụng đẳng thức $$v^2(x,y)=2\displaystyle\int_0^yv(x,s)\dfrac{\partial v}{\partial y}(x,s)\text{d}s$$ để chứng minh rằng tồn tại số $C_0>0$ không phụ thuộc vào $v$ sao cho $\lVert v\rVert_{L^2}\le C_0\lVert\nabla v\rVert_{L^2}$. Từ đó suy ra $$\lVert v\rVert_{H^1}\le C_0'\lVert\nabla v\rVert_{L^2},~~\forall v\in V$$
+với $C_0'$ là một hằng số.\\\\
+\color{red}c) \color{black}Chứng minh bài toán có nghiệm duy nhất $u\in V$.\\\\
+\color{red}d) \color{black}Tìm $J[v]$ với $v\in V$ thỏa $u=\displaystyle\argmin_VJ[v]$.\\\\
+\color{red}e) \color{black}Nếu $w=\displaystyle\argmin_{H^1(\Omega)}J[w]$ và $w\in H^2(\Omega)$ thì $w$ thỏa bài toán biên nào?\\\\
+\color{red}\underline{\textbf{Bài 2 (5 điểm):}} \color{black}Cho $\Omega=(0,\pi),~T>0,~\kappa>0,~f\in L^2\big(\Omega\times(0,T)\big)$ và $g\in L^2(\Omega)$. Xét phương trình\\$u_t-\kappa u_{xx}=f$ với điều kiện biên $u(0,t)=u(\pi,t)=0$ và điều kiện đầu $u(x,0)=g(x),~0<x<\pi$.\\\\
+\color{red}a) \color{black}Tìm $D(L)$ với $Lu=-\kappa u_{xx}$.\\\\
+\color{red}b) \color{black}Chứng minh $L$ đơn điệu, cực đại trên $L^2(\Omega)$.\\\\
+\color{red}c) \color{black}Giả sử $f\equiv0,~g\in L^2(\Omega)$. Chứng minh bài toán có nghiệm $u$ bằng định lý Hille - Yoshida.\\\\
+\color{red}d) \color{black}Tìm công thức của nửa nhóm $S(t)$ để nghiệm $u$ của câu c thỏa mãn $u(x,t)=S(t)g$. Sử dụng công thức này để viết công thức nghiệm trong trường hợp $f$ khác 0.
+\end{document}
