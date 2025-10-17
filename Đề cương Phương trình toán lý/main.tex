@@ -6,21 +6,21 @@
 \usepackage[utf8]{vietnam}
 \usepackage[english]{babel}
 \usepackage{multicol}
-\usepackage{tabularx, tikz}
+\usepackage{tabularx, tikz, caption}
 \usepackage{xcolor,amsmath,amssymb,amsfonts}
 \usepackage[most]{tcolorbox}
 \usepackage{hyperref}
-%\usepackage{background}
+\usepackage{background}
 \usetikzlibrary{calc}
-%\backgroundsetup{%
-	%  scale=1,       %% change accordingly
-	%  angle=0,       %% change accordingly
-	%  opacity=.6,    %% change accordingly
-	%  color =black,  %% change accordingly
-	%  contents={\begin{tikzpicture}[remember picture,overlay]
-			%        \node at ([yshift=4pt,xshift=5pt]current page.center) {\includegraphics[width=23cm]{bg.png}};    %% yshift and xshift for example only
-			%    \end{tikzpicture}}
-	%}
+\backgroundsetup{%
+	  scale=1,       %% change accordingly
+	  angle=0,       %% change accordingly
+	  opacity=.6,    %% change accordingly
+	  color =black,  %% change accordingly
+	  contents={\begin{tikzpicture}[remember picture,overlay]
+			        \node at ([yshift=4pt,xshift=5pt]current page.center) {\includegraphics[width=23cm]{bg.png}};    %% yshift and xshift for example only
+			    \end{tikzpicture}}
+	}
 \renewcommand{\baselinestretch}{1.15}
 \DeclareFontFamily{U}{mathx}{}
 \DeclareFontShape{U}{mathx}{m}{n}{<-> mathx10}{}
@@ -28,7 +28,7 @@
 \DeclareMathAccent{\widecheck}{0}{mathx}{"71}
 \title{\color{red}\textbf{Đề cương Phương trình toán lý 2025}}
 \author{\color{red}Lê Hoàng Bảo}
-\date{\color{red}16 tháng 10 năm 2025}
+\date{\color{red}17 tháng 10 năm 2025}
 \addto\captionsenglish{\renewcommand*\contentsname{Mục lục}}
 \begin{document}
 	% Set the page style to "fancy"...
@@ -43,15 +43,16 @@
 	\fancyfoot[R]{Mã môn học: MTH10413}
 	\renewcommand{\headrulewidth}{0.6pt}
 	\renewcommand{\footrulewidth}{0.6pt}
+	\renewcommand{\refname}{Tài liệu tham khảo}
 	\maketitle\thispagestyle{empty}
 	\newpage\thispagestyle{empty}
 	\begin{center}
 		\LARGE \textbf{LỜI MỞ ĐẦU}
 	\end{center}
 	
-	Xin chào các bạn, mình là Lê Hoàng Bảo, cựu sinh viên nhóm ngành Toán thuộc Khoa Toán - Tin học của Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM, và hiện tại đang theo học chương trình Thạc sĩ Toán Giải tích của Trường. Giới thiệu sơ lược thì \textbf{Phương trình toán lý} là một trong những môn bắt buộc đối với những bạn đang theo chuyên ngành Giải tích/Giải tích số, và các bạn theo chuyên ngành khác có thể lấy môn này làm môn tự chọn để tích lũy tín chỉ.\\
+	Xin chào các bạn, mình là Lê Hoàng Bảo, cựu sinh viên nhóm ngành Toán thuộc Khoa Toán - Tin học của Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM, và hiện tại đang theo học chương trình Thạc sĩ Toán Giải tích của Trường.\\
 	
-	Nội dung môn học xoay quanh việc giải các phương trình vi phân đạo hàm riêng với ẩn là một hàm nhiều biến, cùng với các điều kiện biên và điều kiện đầu tương ứng. Mỗi dạng phương trình sẽ ứng với một hiện tượng vật lý trong thực tiễn, chẳng hạn như truyền sóng trên một sợi dây, truyền nhiệt trên một thanh kim loại, v.v. Bên cạnh đó, các bạn cũng sẽ được làm quen với hai phép biến đổi khá quan trọng trong lĩnh vực vật lý kĩ thuật, đó là phép biến đổi Fourier và phép biến đổi Laplace, cũng như là các ứng dụng của hai phép biến đổi này trong việc giải phương trình vi phân và phương trình đạo hàm riêng.\\
+	Giới thiệu sơ lược thì \textbf{Phương trình toán lý} là một trong những môn bắt buộc đối với những bạn đang theo chuyên ngành Giải tích/Giải tích số, và các bạn theo chuyên ngành khác có thể lấy môn này làm môn tự chọn để tích lũy tín chỉ. Nội dung môn học xoay quanh việc giải các phương trình vi phân đạo hàm riêng với ẩn là một hàm nhiều biến, cùng với các điều kiện biên và điều kiện đầu tương ứng. Mỗi dạng phương trình sẽ ứng với một hiện tượng vật lý trong thực tiễn, chẳng hạn như truyền sóng trên một sợi dây, truyền nhiệt trên một thanh kim loại, v.v. Bên cạnh đó, các bạn cũng sẽ được làm quen với hai phép biến đổi khá quan trọng trong lĩnh vực vật lý kĩ thuật, đó là phép biến đổi Fourier và phép biến đổi Laplace, cũng như là các ứng dụng của hai phép biến đổi này trong việc giải phương trình vi phân và phương trình đạo hàm riêng.\\
 	
 	Mình soạn đề cương môn học này nhằm giúp cho các bạn có thể nắm rõ các dạng bài và cách trình bày bài làm trong môn học này, đặc biệt là đối với những bạn có mong muốn làm về đề tài liên quan đến phương trình đạo hàm riêng thì đây sẽ là một trong các môn làm nền tảng cho bản thân sau này. Đề cương bao gồm tóm tắt lý thuyết, ví dụ minh họa và các bài tập cho các bạn có thể tự ôn tập. Trong đề cương này, ta viết tắt "ODE" (Ordinary Differential Equations) và "PDE" (Partial Differential Equations) lần lượt thay cho "phương trình vi phân thường" và "phương trình đạo hàm riêng".\\
 	
@@ -2079,6 +2080,24 @@
 			u_x(0,t)=u_x(2\pi,t)=0, & t\ge0, \\
 			\noalign{\vskip5pt}
 			u(x,0)=1+5\cos x,~u_t(x,0)=\ln2025+5\pi\cos\dfrac{3x}{2}, & 0\le x\le2\pi;
+		\end{array}
+	\end{cases}$\\\\\\
+	\textbf{c) }$\begin{cases}
+		\begin{array}{ll}
+			u_{tt}=49u_{xx}+\mathrm e^{t}\cos(10\pi x)-x^2\sin t-98(\sin t-2t), & 0<x<0.5,~t>0, \\
+			\noalign{\vskip6pt}
+			u_x(0,t)=2t,\,u_x(0.5,t)=\sin t, & t\ge0, \\
+			\noalign{\vskip5pt}
+			u(x,0)=2+5\cos(4\pi x),~u_t(x,0)=5\pi\cos(6\pi x)+2x-4x^2, & 0\le x\le0.5;
+		\end{array}
+	\end{cases}$\\\\\\
+	\textbf{d) }$\begin{cases}
+		\begin{array}{ll}
+			u_{tt}=9u_{xx}+\cos(3x)+\dfrac9\pi(t+2), & 0<x<\pi,~t>0, \\
+			\noalign{\vskip6pt}
+			u_x(0,t)=t+3,\,u_x(\pi,t)=1, & t\ge0, \\
+			\noalign{\vskip5pt}
+			u(x,0)=\cos(5x)+3x-\dfrac{x^2}{\pi},~u_t(x,0)=\pi\cos x+x+\dfrac{3x^2}{2\pi}, & 0\le x\le\pi.
 		\end{array}
 	\end{cases}$
 	\newpage
@@ -4585,35 +4604,72 @@
 		\end{cases}$
 		\end{flushleft}
 	\end{multicols}
-	\color{red}\textbf{\underline{Bài 4:}} \color{black}Bằng phương pháp biến đổi Laplace, hãy tìm nghiệm $u(x,t)$ của các PDE sau đây.\\\\
-	\textbf{a) }$\begin{cases}
-		\begin{array}{ll}
-			u_t+u_x=2x, & x>0,~t>0, \\
-			u(0,t)=0, & t\ge0,\\
-			u(x,0)=0, & x\ge0;
-		\end{array}
-	\end{cases}$\\\\\\
-	\textbf{b) }$\begin{cases}
-		\begin{array}{ll}
-			u_t+u_x+u=0, & x>0,~t>0, \\
-			u(0,t)=0, & t\ge0,\\
-			u(x,0)=\cos x, & x\ge0;
-		\end{array}
-	\end{cases}$\\\\\\
-	\textbf{c) }$\begin{cases}
-	\begin{array}{ll}
-		u_t+2u_x=x+t, & x>0,~t>0, \\
-		u(0,t)=0, & t\ge0,\\
-		u(x,0)=0, & x\ge0;
-	\end{array}
-	\end{cases}$\\\\\\
-	\textbf{d) }$\begin{cases}
-	\begin{array}{ll}
-		u_t=u_{xx}, & x>0,~t>0, \\
-		u_x(0,t)=\mathrm e^{-t}, & t\ge0,\\
-		u(x,0)=0, & x\ge0;
-	\end{array}
-	\end{cases}$
+	\color{red}\textbf{\underline{Bài 4:}} \color{black}Bằng phương pháp biến đổi Laplace, hãy tìm nghiệm $u(x,t)$ của các PDE sau đây.
+	\begin{multicols}{2}
+		\begin{flushleft}
+			\textbf{a) }$\begin{cases}
+				\begin{array}{ll}
+					u_t+u_x=2x, & x>0,~t>0, \\
+					u(0,t)=0, & t\ge0,\\
+					u(x,0)=0, & x\ge0;
+				\end{array}
+			\end{cases}$
+		\end{flushleft}
+		\begin{flushleft}
+			\textbf{c) }$\begin{cases}
+				\begin{array}{ll}
+					u_t+2u_x=x+t, & x>0,~t>0, \\
+					u(0,t)=0, & t\ge0,\\
+					u(x,0)=0, & x\ge0;
+				\end{array}
+			\end{cases}$
+		\end{flushleft}
+		\begin{flushleft}
+			\textbf{e) }$\begin{cases}
+				\begin{array}{ll}
+					u_t=4u_{xx}, & 0<x<2,~t>0, \\
+					u(0,t)=u(2,t)=0, & t\ge0,\\
+					u(x,0)=2\sin(2\pi x), & x\ge0;
+				\end{array}
+			\end{cases}$
+		\end{flushleft}
+		\columnbreak
+		\begin{flushleft}
+			\textbf{b) }$\begin{cases}
+				\begin{array}{ll}
+					u_t+u_x+u=0, & x>0,~t>0, \\
+					u(0,t)=0, & t\ge0,\\
+					u(x,0)=\cos x, & x\ge0;
+				\end{array}
+			\end{cases}$
+		\end{flushleft}
+		\begin{flushleft}
+			\textbf{d) }$\begin{cases}
+				\begin{array}{ll}
+					u_t=u_{xx}, & x>0,~t>0, \\
+					u_x(0,t)=\mathrm e^{-t}, & t\ge0,\\
+					u(x,0)=0, & x\ge0;
+				\end{array}
+			\end{cases}$
+		\end{flushleft}
+		\begin{flushleft}
+			\textbf{f) }$\begin{cases}
+				\begin{array}{ll}
+					u_t=16u_{xx}, & 0<x<\pi,~t>0, \\
+					u(0,t)=u(\pi,t)=0, & t\ge0,\\
+					u(x,0)=4\sin(5x), & x\ge0.
+				\end{array}
+			\end{cases}$
+		\end{flushleft}
+	\end{multicols}
 \newpage
-\large\textbf{TÀI LIỆU THAM KHẢO}
+\begin{thebibliography}{1}
+\bibitem[1]{1} Nguyễn Thành Long, \textit{\href{https://drive.google.com/file/d/1RPRrqId9-08bfTKazocns1gklrmpyDrM/view?usp=drive_link}{Phương trình toán lý}}, Bộ môn Giải tích, Khoa Toán - Tin học, Trường Đại học Khoa học tự nhiên, ĐHQG-HCM, 2017.
+
+\bibitem[2]{2} Peter V.O' Neil, \textit{\href{https://libgen.is/book/index.php?md5=D24358102866676081EED6FF319C84E6}{Beginning Partial Differential Equations}}, The University of Alabama and Birmingham, John Wiley \& Sons, Inc., 2008.
+
+\bibitem[3]{3} Lawrence C. Evans, \textit{\href{https://libgen.is/book/index.php?md5=6D9DF85A10396346D4CD5261DEE06AC4}{Partial Differential Equations}}, Graduate Studies in Mathematics, vol. 19, American Mathematical Society, 1998.
+
+\bibitem[4]{4} Russell Herman, \textit{\href{https://math.libretexts.org/Bookshelves/Differential_Equations/Introduction_to_Partial_Differential_Equations_(Herman)}{Introduction to Partial Differential Equations}}, University of North Carolina Wilmington, LibreTexts Mathematics, 2024.
+\end{thebibliography}
 \end{document}
