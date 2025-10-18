@@ -28,7 +28,7 @@
 \DeclareMathAccent{\widecheck}{0}{mathx}{"71}
 \title{\color{red}\textbf{Đề cương Phương trình toán lý 2025}}
 \author{\color{red}Lê Hoàng Bảo}
-\date{\color{red}17 tháng 10 năm 2025}
+\date{\color{red}18 tháng 10 năm 2025}
 \addto\captionsenglish{\renewcommand*\contentsname{Mục lục}}
 \begin{document}
 	% Set the page style to "fancy"...
@@ -50,9 +50,11 @@
 		\LARGE \textbf{LỜI MỞ ĐẦU}
 	\end{center}
 	
-	Xin chào các bạn, mình là Lê Hoàng Bảo, cựu sinh viên nhóm ngành Toán thuộc Khoa Toán - Tin học của Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM, và hiện tại đang theo học chương trình Thạc sĩ Toán Giải tích của Trường.\\
+	Xin chào các bạn, mình là Lê Hoàng Bảo, cựu sinh viên khóa 2021 nhóm ngành Toán thuộc Khoa Toán - Tin học của Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM, và hiện tại đang theo học chương trình Thạc sĩ Toán Giải tích của Trường.\\
 	
-	Giới thiệu sơ lược thì \textbf{Phương trình toán lý} là một trong những môn bắt buộc đối với những bạn đang theo chuyên ngành Giải tích/Giải tích số, và các bạn theo chuyên ngành khác có thể lấy môn này làm môn tự chọn để tích lũy tín chỉ. Nội dung môn học xoay quanh việc giải các phương trình vi phân đạo hàm riêng với ẩn là một hàm nhiều biến, cùng với các điều kiện biên và điều kiện đầu tương ứng. Mỗi dạng phương trình sẽ ứng với một hiện tượng vật lý trong thực tiễn, chẳng hạn như truyền sóng trên một sợi dây, truyền nhiệt trên một thanh kim loại, v.v. Bên cạnh đó, các bạn cũng sẽ được làm quen với hai phép biến đổi khá quan trọng trong lĩnh vực vật lý kĩ thuật, đó là phép biến đổi Fourier và phép biến đổi Laplace, cũng như là các ứng dụng của hai phép biến đổi này trong việc giải phương trình vi phân và phương trình đạo hàm riêng.\\
+	Giới thiệu sơ lược thì \textbf{Phương trình toán lý} là một trong những môn \textit{chuyên ngành} bắt buộc đối với những bạn đang theo chuyên ngành Giải tích/Giải tích số, và các bạn theo chuyên ngành khác có thể lấy môn này làm môn tự chọn để tích lũy tín chỉ. Môn học được mở vào năm thứ 3 và có khối lượng là 4 tín chỉ.\\
+	
+	Nội dung môn học xoay quanh việc giải các phương trình vi phân đạo hàm riêng với ẩn là một hàm nhiều biến, cùng với các điều kiện biên và điều kiện đầu tương ứng. Mỗi dạng phương trình sẽ ứng với một hiện tượng vật lý trong thực tiễn, chẳng hạn như truyền sóng trên một sợi dây, truyền nhiệt trên một thanh kim loại, v.v. Bên cạnh đó, các bạn cũng sẽ được làm quen với hai phép biến đổi khá quan trọng trong lĩnh vực vật lý kĩ thuật, đó là phép biến đổi Fourier và phép biến đổi Laplace, cũng như là các ứng dụng của hai phép biến đổi này trong việc giải phương trình vi phân và phương trình đạo hàm riêng.\\
 	
 	Mình soạn đề cương môn học này nhằm giúp cho các bạn có thể nắm rõ các dạng bài và cách trình bày bài làm trong môn học này, đặc biệt là đối với những bạn có mong muốn làm về đề tài liên quan đến phương trình đạo hàm riêng thì đây sẽ là một trong các môn làm nền tảng cho bản thân sau này. Đề cương bao gồm tóm tắt lý thuyết, ví dụ minh họa và các bài tập cho các bạn có thể tự ôn tập. Trong đề cương này, ta viết tắt "ODE" (Ordinary Differential Equations) và "PDE" (Partial Differential Equations) lần lượt thay cho "phương trình vi phân thường" và "phương trình đạo hàm riêng".\\
 	
@@ -3742,7 +3744,9 @@
 	
 	Các trường hợp còn lại hi vọng các bạn có thể tự tìm.\\
 	
-	\textbf{Ví dụ:} \textit{Giải phương trình Laplace trên hình chữ nhật $[0,2]\times[0,3]$ sau} $$\begin{cases}
+	Sẽ có một số bài toán dạng này yêu cầu tìm giá trị lớn nhất/nhỏ nhất của hàm $u$ trên miền chữ nhật cho trước. Lúc này ta sử dụng tính chất cực trị của hàm điều hòa để tìm max, min.\\
+	
+	\textbf{Ví dụ:} \textit{Giải phương trình Laplace trên hình chữ nhật $D=[0,2]\times[0,3]$ sau} $$\begin{cases}
 		\begin{array}{ll}
 			\Delta u=u_{xx}+u_{yy}=0, & 0<x<2,~0<y<3,\\
 			\noalign{\vskip6pt}
@@ -3751,6 +3755,8 @@
 			u(x,0)=0,~u(x,3)=\sinh\pi\cos\dfrac{5\pi x}{4}, & 0\le x\le 2.
 		\end{array}
 	\end{cases}$$
+	
+	\textit{Tìm giá trị lớn nhất và giá trị nhỏ nhất của $u$ trên $D$.}\\
 	
 	\textit{Giải.} Bằng phương pháp tách biến Fourier, giả sử nghiệm của bài toán có dạng $$u(x,y)=X(x)Y(y).$$
 	
@@ -3794,6 +3800,18 @@
 		\end{cases}
 	\end{gather*}
 	khi đó $B_2=\dfrac{\sinh\pi}{\sinh\frac{15\pi}{4}}$ và $B_n=0$ với $n\ne2$. Vậy nghiệm của bài toán là $$u(x,y)=\dfrac{\sinh\pi}{\sinh\frac{15\pi}{4}}\sinh\frac{5\pi y}{4}\cos\frac{5\pi x}{4}.$$
+	
+	Ta có $u$ là hàm điều hòa trên $D$ (do $\Delta u=0$) và liên tục trên $\overline D$ nên $u$ có giá trị lớn nhất và nhỏ nhất trên biên $\partial D$ của $D$. Trên $\partial D$, ta xét bốn cạnh sau:\\
+	
+	\quad$\bullet~(x,y)\in\{0\}\times[0,3]\colon u(0,y)=\dfrac{\sinh\pi}{\sinh\frac{15\pi}{4}}\sinh\dfrac{5\pi y}{4}\in\left[0,\,\sinh\pi\right]$;\vskip7pt
+	
+	\quad$\bullet~(x,y)\in\{2\}\times[0,3]\colon u(2,y)=\dfrac{\sinh\pi}{\sinh\frac{15\pi}{4}}\sinh\dfrac{5\pi y}{4}\cos\dfrac{5\pi}{2}=0$;\vskip7pt
+	
+	\quad$\bullet~(x,y)\in[0,2]\times\{0\}\colon u(x,0)=\dfrac{\sinh\pi}{\sinh\frac{15\pi}{4}}\sinh0\cos\dfrac{5\pi x}{4}=0$;\vskip7pt
+	
+	\quad$\bullet~(x,y)\in[0,2]\times\{3\}\colon u(x,3)=\sinh\pi\cos\dfrac{5\pi x}{4}\in\left[-\sinh\pi,\,\sinh\pi\right]$;\\
+	
+	Vậy ta có $\displaystyle\max_{(x,y)\in D}u=\sinh\pi$ tại $(x,y)=(0,3)$ và $\displaystyle\min_{(x,y)\in D}u=0$.
 	\subsubsection{Phương trình Poisson}
 	\vspace{2mm}
 	\begin{tcolorbox}[enhanced,colback=blue!5!white,colframe=blue!75!black,sharp corners=all,shadow={0mm}{0mm}{-1.5mm}%
@@ -4256,8 +4274,8 @@
 			\end{axis}
 			
 		\end{tikzpicture}
-	\end{minipage}\\\\
-	\textbf{\color{red}\underline{Bài 4:}} Tìm nghiệm của các bài toán sau với điều kiện biên hỗn hợp.
+	\end{minipage}\\\\\\
+	\textbf{\color{red}\underline{Bài 4:}} Tìm nghiệm của các bài toán sau với điều kiện biên hỗn hợp. Cho biết giá trị lớn nhất và nhỏ nhất của $u$ trên miền đã cho.
 	\begin{flushleft}
 		\textbf{a) }$\begin{cases}
 			\begin{array}{ll}
@@ -4272,7 +4290,16 @@
 			\begin{array}{ll}
 				\Delta u=u_{xx}+u_{yy}=0, & 0<x<0.5\pi,~0<y<2,\\
 				u(0,y)=u_x(0.5\pi,y)=0, & 0\le y\le 2,\\
-				u(x,0)=0,~u(x,2)=\sin(7x), & 0\le x\le0.5\pi.
+				u(x,0)=0,~u(x,2)=\sin(7x), & 0\le x\le0.5\pi;
+			\end{array}
+		\end{cases}$\vskip7pt
+		\textbf{c) }$\begin{cases}
+			\begin{array}{ll}
+				\Delta u=u_{xx}+u_{yy}=0, & 0<x<1,~0<y<3,\\
+				\noalign{\vskip5pt}
+				u(0,y)=0,\,u_x(1,y)=\dfrac{5\pi}6\sin\dfrac{5\pi y}{6}, & 0\le y\le 3,\\
+				\noalign{\vskip4pt}
+				u(x,0)=u_y(x,3)=0, & 0\le x\le1.
 			\end{array}
 		\end{cases}$
 	\end{flushleft}
@@ -4289,8 +4316,15 @@
 			\begin{array}{ll}
 				-\Delta u=-u_{xx}-u_{yy}=\sin(\pi x)\sin(\pi y), & 0<x<1,~0<y<3,\\
 				u(0,y)=u(1,y)=0, & 0\le y\le3,\\
-				u(x,0)=u(x,3)=0, & 0\le x\le1.
+				u(x,0)=u(x,3)=0, & 0\le x\le1;
 			\end{array}
+		\end{cases}$\vskip7pt
+		\textbf{c) }$\begin{cases}
+		\begin{array}{ll}
+			-\Delta u=-u_{xx}-u_{yy}=\mathrm e^{x+y}, & 0<x<2,~0<y<5,\\
+			u(0,y)=u(2,y)=0, & 0\le y\le5,\\
+			u(x,0)=u(x,5)=0, & 0\le x\le2.
+		\end{array}
 		\end{cases}$
 	\end{flushleft}
 	\newpage
@@ -4671,5 +4705,7 @@
 \bibitem[3]{3} Lawrence C. Evans, \textit{\href{https://libgen.is/book/index.php?md5=6D9DF85A10396346D4CD5261DEE06AC4}{Partial Differential Equations}}, Graduate Studies in Mathematics, vol. 19, American Mathematical Society, 1998.
 
 \bibitem[4]{4} Russell Herman, \textit{\href{https://math.libretexts.org/Bookshelves/Differential_Equations/Introduction_to_Partial_Differential_Equations_(Herman)}{Introduction to Partial Differential Equations}}, University of North Carolina Wilmington, LibreTexts Mathematics, 2024.
+
+\bibitem[5]{5} Slide bài giảng Phương trình toán lý của TS. Lê Đức Hưng, Bộ môn Giải tích, Khoa Toán - Tin học, Trường Đại học Khoa học tự nhiên, ĐHQG-HCM.
 \end{thebibliography}
 \end{document}
